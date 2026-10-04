@@ -28,6 +28,30 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Validate RDKit, science, dependencies, and complete notebook execution
         run: python verify_cloud.py
+      - name: Install browser test runtime
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Start a fresh native Python application
+        run: |
+          python -m marimo run missing_molecules.py --headless --no-token --host 127.0.0.1 --port 2718 > evidence/cloud/native_server.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(60):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:2718', timeout=2).close()
+                  break
+              except Exception:
+                  time.sleep(1)
+          else:
+              raise SystemExit('Fresh native marimo server did not start')
+          PY
+      - name: Validate drawings and live Python widget interactions
+        env:
+          MARIMO_URL: http://127.0.0.1:2718
+          BROWSER_EVIDENCE_DIR: evidence/github_fresh_browser
+          BROWSER_PHASE: fresh_github_linux_server
+        run: node test_live_browser.cjs
       - name: Save fresh validation evidence
         if: always()
         uses: actions/upload-artifact@v7
@@ -37,4 +61,6 @@ jobs:
             CLOUD_EXECUTION_REPORT.json
             verified_findings.json
             evidence/cloud/
+            evidence/github_fresh_browser/live_browser_report.json
+            evidence/github_fresh_browser/*.png
           retention-days: 7
