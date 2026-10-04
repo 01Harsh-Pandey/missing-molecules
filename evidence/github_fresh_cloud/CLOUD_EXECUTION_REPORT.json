@@ -1,0 +1,310 @@
+{
+  "python": "3.13.15 (main, Aug  6 2026, 02:15:18) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "status": "SCIENCE_CHEMISTRY_AND_MARIMO_PASSED_BROWSER_AND_FRESH_SESSION_PENDING",
+  "commands": {
+    "rdkit_import": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/rdkit_import.log"
+    },
+    "semantic_tests": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/semantic_tests.log"
+    },
+    "full_chemistry_and_data": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/full_chemistry_and_data.log"
+    },
+    "marimo_strict_check": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/marimo_strict_check.log"
+    },
+    "dependency_consistency": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/dependency_consistency.log"
+    },
+    "html_export": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/html_export.log"
+    },
+    "session_export": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/session_export.log"
+    },
+    "freeze_successful_environment": {
+      "exit_code": 0,
+      "status": "PASSED",
+      "log": "evidence/cloud/freeze_successful_environment.log"
+    }
+  },
+  "browser_validation": "PENDING",
+  "fresh_molab_validation": "PENDING",
+  "submission_ready": false,
+  "chemistry_audit": {
+    "valid_molecule_ids": 7618,
+    "invalid_ids": [],
+    "distinct_isomeric_structures": 7617,
+    "repeated_structure_groups": 1,
+    "repeated_structure_id_groups": [
+      [
+        "E-0001829",
+        "E-0014119"
+      ]
+    ],
+    "multi_fragment_ids": [],
+    "multi_fragment_examples": [],
+    "ids_with_specified_atom_stereochemistry": 2054,
+    "ids_with_specified_bond_stereochemistry": 9,
+    "ids_with_unassigned_potential_atom_stereocenters": 232,
+    "nonisomeric_groups_with_multiple_isomeric_smiles": 549,
+    "stereochemical_variant_examples": [
+      [
+        [
+          "E-0002269"
+        ],
+        [
+          "E-0002337"
+        ]
+      ],
+      [
+        [
+          "E-0010604"
+        ],
+        [
+          "E-0010611"
+        ]
+      ],
+      [
+        [
+          "E-0011190"
+        ],
+        [
+          "E-0011210"
+        ]
+      ],
+      [
+        [
+          "E-0011236"
+        ],
+        [
+          "E-0011249"
+        ]
+      ],
+      [
+        [
+          "E-0011240"
+        ],
+        [
+          "E-0011242"
+        ]
+      ],
+      [
+        [
+          "E-0011250"
+        ],
+        [
+          "E-0011252"
+        ]
+      ],
+      [
+        [
+          "E-0011251"
+        ],
+        [
+          "E-0011279"
+        ]
+      ],
+      [
+        [
+          "E-0011262"
+        ],
+        [
+          "E-0011264"
+        ]
+      ]
+    ],
+    "policy": "Keep published structures, stereochemistry, fragments and tautomers unchanged. Canonical groups are diagnostic only; analysis counts remain published IDs. Unassigned stereochemistry is not invented. Multi-fragment alone does not establish a salt identity.",
+    "status": "PASSED"
+  },
+  "analysis_denominator": {
+    "kind": "valid, nonempty RDKit-parsed published molecule IDs",
+    "n": 7618,
+    "valid_structure_n": 7618,
+    "measurement_kinds": {
+      "ksol": {
+        "missing": 195,
+        "exact": 7298,
+        "censored": 125
+      },
+      "hlm": {
+        "exact": 4542,
+        "missing": 2796,
+        "censored": 279,
+        "invalid": 1
+      },
+      "papp": {
+        "missing": 3812,
+        "exact": 3773,
+        "censored": 31,
+        "invalid": 2
+      },
+      "efflux": {
+        "missing": 3815,
+        "exact": 3777,
+        "censored": 26
+      }
+    },
+    "source_anomaly_examples": {
+      "ksol": [],
+      "hlm": [
+        {
+          "id": "E-0017007",
+          "raw": "< 0.0",
+          "reason": "Outside endpoint domain"
+        }
+      ],
+      "papp": [
+        {
+          "id": "E-0027111",
+          "raw": "< 0.00",
+          "reason": "Outside endpoint domain"
+        },
+        {
+          "id": "E-0027124",
+          "raw": "< 0.00",
+          "reason": "Outside endpoint domain"
+        }
+      ],
+      "efflux": []
+    }
+  },
+  "default_gates": {
+    "interval": {
+      "n": 7618,
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226,
+      "lower": 1844,
+      "upper": 5070,
+      "complete_decisions": 4392
+    },
+    "discard_censored": {
+      "n": 7618,
+      "pass": 1682,
+      "fail": 2448,
+      "unresolved": 3488,
+      "lower": 1682,
+      "upper": 5170,
+      "complete_decisions": 4130
+    },
+    "changed_decisions": 262,
+    "examples": [
+      {
+        "id": "E-0010691",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011215",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011248",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011263",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011268",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011272",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011273",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011287",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      }
+    ],
+    "additional_certified_passes": 162,
+    "additional_certified_failures": 100,
+    "assay_opportunity": [
+      {
+        "endpoint": "papp",
+        "single_blocker": 1092,
+        "any_blocker": 2815
+      },
+      {
+        "endpoint": "hlm",
+        "single_blocker": 392,
+        "any_blocker": 2070
+      },
+      {
+        "endpoint": "ksol",
+        "single_blocker": 7,
+        "any_blocker": 115
+      }
+    ],
+    "first_failure_forward": [
+      {
+        "endpoint": "ksol",
+        "first_fail": 1329
+      },
+      {
+        "endpoint": "hlm",
+        "first_fail": 706
+      },
+      {
+        "endpoint": "papp",
+        "first_fail": 513
+      }
+    ],
+    "first_failure_reversed": [
+      {
+        "endpoint": "papp",
+        "first_fail": 654
+      },
+      {
+        "endpoint": "hlm",
+        "first_fail": 1016
+      },
+      {
+        "endpoint": "ksol",
+        "first_fail": 878
+      }
+    ]
+  },
+  "session_inspection": {
+    "cell_count": 21,
+    "error_output_count": 0,
+    "errors": []
+  },
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "packages": {
+    "marimo": "0.25.1",
+    "rdkit": "2026.3.6",
+    "anywidget": "0.9.18",
+    "traitlets": "5.14.3"
+  }
+}

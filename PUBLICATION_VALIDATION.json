@@ -2,17 +2,16 @@
   "persistent_molab_url": "https://molab.marimo.io/github/01Harsh-Pandey/missing-molecules/blob/main/missing_molecules.py",
   "github_url": "https://github.com/01Harsh-Pandey/missing-molecules",
   "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
-  "github_source_match": "PENDING_REMOTE_HASH_CHECK",
-  "persistent_link_fresh_python_session": "PENDING_CLOUD_RUN",
+  "github_source_match": "PASSED",
+  "persistent_link_fresh_python_session": "PENDING_BROWSER_CONTROL_TIMEOUT",
   "competition_submitted": false,
-  "updated_at_utc": "2026-10-04T22:03:05.688838+00:00",
-  "publication_status": "UPLOADING",
+  "updated_at_utc": "2026-10-04T22:18:53.851590+00:00",
+  "publication_status": "PUBLISHED_MOLAB_LIVE_CHECK_PENDING_BROWSER_CONTROL",
   "github_api_authentication": "PASSED",
   "github_account": "01Harsh-Pandey",
   "github_repository_creation": {
     "status": "PASSED",
-    "public": true,
-    "default_branch": "main"
+    "public": true
   },
   "local_packaged_source_matches_validated_notebook": true,
   "static_preview_session_filename": "__marimo__/session/missing_molecules.py.json",
@@ -27,5 +26,88 @@
     "snapshot_exception_outputs": 0,
     "readme_includes_question_finding_attribution_ai_disclosure_run_instructions_and_badge": true
   },
-  "commit_sha": null
+  "validated_source_commit_sha": "8a374029bfbddec174049ca9f73e32477573a43c",
+  "publication_commit_sha": "9e83aed1d38de9d43943a29f297cb9c58379fbe4",
+  "persistent_link_page_open": "PASSED",
+  "fresh_repository_linux_execution": {
+    "status": "PASSED",
+    "workflow_run_url": "https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37239211404",
+    "workflow_run_id": 37239211404,
+    "source_commit_sha": "8a374029bfbddec174049ca9f73e32477573a43c",
+    "python": "3.13.15 (main, Aug  6 2026, 02:15:18) [GCC 13.3.0]",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "packages": {
+      "marimo": "0.25.1",
+      "rdkit": "2026.3.6",
+      "anywidget": "0.9.18",
+      "traitlets": "5.14.3"
+    },
+    "commands": {
+      "rdkit_import": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/rdkit_import.log"
+      },
+      "semantic_tests": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/semantic_tests.log"
+      },
+      "full_chemistry_and_data": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/full_chemistry_and_data.log"
+      },
+      "marimo_strict_check": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/marimo_strict_check.log"
+      },
+      "dependency_consistency": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/dependency_consistency.log"
+      },
+      "html_export": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/html_export.log"
+      },
+      "session_export": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/session_export.log"
+      },
+      "freeze_successful_environment": {
+        "exit_code": 0,
+        "status": "PASSED",
+        "log": "evidence/cloud/freeze_successful_environment.log"
+      }
+    },
+    "session_inspection": {
+      "cell_count": 21,
+      "error_output_count": 0,
+      "errors": []
+    },
+    "default_counts": {
+      "n": 7618,
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226,
+      "lower": 1844,
+      "upper": 5070,
+      "complete_decisions": 4392
+    },
+    "chemistry_valid_ids": 7618,
+    "evidence": "evidence/github_fresh_cloud/CLOUD_EXECUTION_REPORT.json"
+  },
+  "static_preview_remote_hash_check": {
+    "remote_sha256": "63dab1b2fde3438c54ea81c76429aecced8d8eebf87484eff00cd20ee48b676d",
+    "bytes": 32758,
+    "blob_sha": "65a933f0f2df8c93a70a03ccad09be8a5b272371"
+  },
+  "molab_browser_check": {
+    "status": "PENDING",
+    "reason": "Browser-control calls timed out while opening view-mode selection and could not recover. The persistent page itself opened and displayed the correct notebook, View on GitHub link, Preview mode, and Run it now button."
+  }
 }

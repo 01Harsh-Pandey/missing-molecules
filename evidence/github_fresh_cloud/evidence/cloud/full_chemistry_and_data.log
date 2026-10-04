@@ -1,0 +1,132 @@
+COMMAND: ["/opt/hostedtoolcache/Python/3.13.15/x64/bin/python", "validate_full.py", "--no-embed"]
+EXIT CODE: 0
+STDOUT:
+{
+  "full_data_logic_checks": "PASSED",
+  "raw_id_engine_logic_checks": "PASSED",
+  "source_rows": 7618,
+  "analysis_population": "valid, nonempty RDKit-parsed published molecule IDs",
+  "analysis_ids": 7618,
+  "valid_molecule_ids": 7618,
+  "default_gates": {
+    "interval": {
+      "n": 7618,
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226,
+      "lower": 1844,
+      "upper": 5070,
+      "complete_decisions": 4392
+    },
+    "discard_censored": {
+      "n": 7618,
+      "pass": 1682,
+      "fail": 2448,
+      "unresolved": 3488,
+      "lower": 1682,
+      "upper": 5170,
+      "complete_decisions": 4130
+    },
+    "changed_decisions": 262,
+    "examples": [
+      {
+        "id": "E-0010691",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011215",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011248",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011263",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011268",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011272",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011273",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011287",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      }
+    ],
+    "additional_certified_passes": 162,
+    "additional_certified_failures": 100,
+    "assay_opportunity": [
+      {
+        "endpoint": "papp",
+        "single_blocker": 1092,
+        "any_blocker": 2815
+      },
+      {
+        "endpoint": "hlm",
+        "single_blocker": 392,
+        "any_blocker": 2070
+      },
+      {
+        "endpoint": "ksol",
+        "single_blocker": 7,
+        "any_blocker": 115
+      }
+    ],
+    "first_failure_forward": [
+      {
+        "endpoint": "ksol",
+        "first_fail": 1329
+      },
+      {
+        "endpoint": "hlm",
+        "first_fail": 706
+      },
+      {
+        "endpoint": "papp",
+        "first_fail": 513
+      }
+    ],
+    "first_failure_reversed": [
+      {
+        "endpoint": "papp",
+        "first_fail": 654
+      },
+      {
+        "endpoint": "hlm",
+        "first_fail": 1016
+      },
+      {
+        "endpoint": "ksol",
+        "first_fail": 878
+      }
+    ]
+  },
+  "demo_ids": [
+    "E-0018881",
+    "E-0011215",
+    "E-0001829",
+    "E-0011211",
+    "E-0002337"
+  ],
+  "embedded_source_bytes": 0,
+  "next": "Run marimo check, execute/export, test real browser interaction, then validate in molab. Those checks remain pending."
+}
+
+STDERR:
