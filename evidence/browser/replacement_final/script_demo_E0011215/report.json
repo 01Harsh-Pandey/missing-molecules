@@ -1,0 +1,379 @@
+{
+  "url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+  "scope": "final_notebook",
+  "notebook": "remote/notebook.py",
+  "chemistry_validated": true,
+  "phase": "replacement_final_scripted_demo_E0011215",
+  "limitation": null,
+  "started_at": "2026-10-04T20:50:08.335Z",
+  "checks": [
+    {
+      "name": "Full chemistry findings match the live baseline and molecule structures render",
+      "status": "PASSED"
+    },
+    {
+      "name": "Initial widget summary equals downloaded Python result",
+      "status": "PASSED",
+      "evidence": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      }
+    },
+    {
+      "name": "Scripted E-0011215 displays KSOL <1.56 and established failure with missing Papp",
+      "status": "PASSED",
+      "evidence": {
+        "id": "E-0011215",
+        "python_detail_cells": [
+          "Kinetic solubility · focused",
+          "< 1.56",
+          "[0, 1.56)",
+          "≥ 10 µM",
+          "fail",
+          "Assay limit"
+        ],
+        "export_decision": {
+          "id": "E-0011215",
+          "status": "fail",
+          "gates": {
+            "ksol": "fail",
+            "hlm": "pass",
+            "papp": "unresolved"
+          }
+        }
+      }
+    },
+    {
+      "name": "Discarding the censored bound changes E-0011215 to unresolved with unchanged raw evidence",
+      "status": "PASSED",
+      "evidence": {
+        "python_detail_cells": [
+          "Kinetic solubility · focused",
+          "< 1.56",
+          "[0, 1.56)",
+          "≥ 10 µM",
+          "unresolved",
+          "Discarded in this experiment"
+        ],
+        "export_decision": {
+          "id": "E-0011215",
+          "status": "unresolved",
+          "gates": {
+            "ksol": "unresolved",
+            "hlm": "pass",
+            "papp": "unresolved"
+          }
+        }
+      }
+    },
+    {
+      "name": "Script demo restores the complete native default state",
+      "status": "PASSED"
+    },
+    {
+      "name": "Script demo has no browser console/page or notebook exception errors",
+      "status": "PASSED"
+    }
+  ],
+  "snapshots": {
+    "baseline": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\replacement_final_script_downloads\\baseline.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        }
+      ]
+    },
+    "E0011215_bounds": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\replacement_final_script_downloads\\E0011215_bounds.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        }
+      ]
+    },
+    "E0011215_discarded": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\replacement_final_script_downloads\\E0011215_discarded.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1682,
+        "fail": 2448,
+        "unresolved": 3488,
+        "lower": 1682,
+        "upper": 5170,
+        "complete_decisions": 4130
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": true,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1208
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 732
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 508
+        }
+      ]
+    },
+    "script_demo_defaults_restored": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\replacement_final_script_downloads\\script_demo_defaults_restored.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        }
+      ]
+    }
+  },
+  "console_errors": [],
+  "page_errors": [],
+  "verified_findings_sha256": "bc90669e4e3a9f6a6006b4a71d33233e9400f1dcce45ce31d6a889a315411e12",
+  "tested_notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "browser_version": "154.0.8037.95",
+  "hosted_writer_takeover": "ALREADY_WRITER_OR_APP",
+  "hosted_frames": [
+    {
+      "name": "",
+      "url": "https://sb-292adb2b15a38c98.sb.molab.run/"
+    }
+  ],
+  "consumer_session_id": "s_qax4he",
+  "hosted_view": "present",
+  "hosted_initial_controls": "Notebook defaults restored through actual browser UI; this existing-session run is not itself fresh validation",
+  "final_native_state": {
+    "enabled_endpoints": [
+      "ksol",
+      "hlm",
+      "papp"
+    ],
+    "thresholds": {
+      "ksol": {
+        "value": 10,
+        "unit": "µM",
+        "direction": "min"
+      },
+      "hlm": {
+        "value": 50,
+        "unit": "mL/min/kg",
+        "direction": "max"
+      },
+      "papp": {
+        "value": 1,
+        "unit": "10⁻⁶ cm/s",
+        "direction": "min"
+      }
+    },
+    "efflux_threshold_disabled": 3,
+    "discard_censored": false,
+    "search": "",
+    "display": "All statuses",
+    "cards": 12,
+    "summary": {
+      "n": 7618,
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226,
+      "lower": 1844,
+      "upper": 5070,
+      "complete_decisions": 4392
+    },
+    "gate_order": [
+      "ksol",
+      "hlm",
+      "papp"
+    ]
+  },
+  "download_comparison": {
+    "status": "PASSED",
+    "counting_unit": "All 7618 published valid-structure molecule IDs",
+    "bounds": "Every molecule decision and gate equals previously independently verified fresh baseline",
+    "discarded": "Every molecule decision and gate equals previously independently verified fresh discard export",
+    "note": "Full downloaded JSON files retained in intermediate work only; final scripted-demo evidence contains compact report and actual screenshots"
+  },
+  "marimo_transport": {
+    "kernel_ready": true,
+    "completed_runs": 6,
+    "busy_cells_at_end": []
+  },
+  "status": "PASSED",
+  "completed_at": "2026-10-04T20:50:29.505Z",
+  "helper_browser_cleanup": "CLOSED",
+  "loaded_module_versions_confirmed_by_paired_client": {
+    "anywidget": "0.9.18",
+    "traitlets": "5.14.3",
+    "kernel_pid": 1726
+  }
+}

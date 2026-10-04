@@ -1,0 +1,52 @@
+{
+  "status": "PASSED",
+  "action": "POST /api/kernel/restart_session with HTTP200 success:true, then a new browser connection; dedicated help first; all21 cells explicitly executed through cm",
+  "pid_before": 80,
+  "pid_after": 3267,
+  "python": "3.13.11 (main, Feb  3 2026, 03:08:54) [GCC 14.2.0]",
+  "executable": "/tmp/uv-venv/bin/python",
+  "packages": {
+    "marimo": "0.25.1",
+    "rdkit": "2026.3.6",
+    "anywidget": "0.9.18",
+    "traitlets": "5.14.3",
+    "numpy": "2.4.6",
+    "websockets": "16.1.1",
+    "jedi": "0.19.2"
+  },
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "cell_count": 21,
+  "cell_errors": [],
+  "default_summary": {
+    "n": 7618,
+    "pass": 1844,
+    "fail": 2548,
+    "unresolved": 3226,
+    "lower": 1844,
+    "upper": 5070,
+    "complete_decisions": 4392
+  },
+  "source_sha256": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c",
+  "chemistry_audit": {
+    "valid_molecule_ids": 7618,
+    "invalid_structure_ids": [],
+    "multi_fragment_ids": [],
+    "distinct_isomeric_structures": 7617,
+    "repeated_structure_groups": 1,
+    "repeated_structure_ids": {
+      "Cc1c2ccnc(C(=O)N[C@H](C)CN(C)C)c2cc2c3cc(OCCCN4CCN(C)CC4)ccc3n(C)c12": [
+        "E-0001829",
+        "E-0014119"
+      ]
+    }
+  },
+  "demo_structure_id": "E-0018881",
+  "structure_svg_bytes": 21576,
+  "browser_validation": "PENDING",
+  "cli_execution_status": "SCIENCE_CHEMISTRY_AND_MARIMO_PASSED_BROWSER_AND_FRESH_SESSION_PENDING",
+  "cli_session_inspection": {
+    "cell_count": 21,
+    "error_output_count": 0,
+    "errors": []
+  }
+}

@@ -1,0 +1,6 @@
+COMMAND: ["/tmp/uv-venv/bin/python", "-c", "from rdkit import Chem; from rdkit.Chem.Draw import rdMolDraw2D; assert Chem.MolFromSmiles('CCO').GetNumAtoms() == 3; print('RDKit import and molecule parse passed')"]
+EXIT CODE: 0
+STDOUT:
+RDKit import and molecule parse passed
+
+STDERR:

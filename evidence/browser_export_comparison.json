@@ -1,0 +1,409 @@
+{
+  "status": "PASSED",
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "checks": [
+    {
+      "file": "evidence\\browser\\main_fresh\\all_four_endpoints.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\all_four_restored_defaults.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\audited_demo_defaults_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\audited_multiple_failures.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\audited_multiple_failures_reordered.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\baseline.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\discard_censored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\display_36_cards.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\display_pass_only.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\efflux_enabled.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\hlm_bound_threshold_5.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 7618,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\hlm_bound_threshold_50.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 7618,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\no_matching_cards.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\reordered.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\restored_defaults.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\restored_threshold.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\search_real_id.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\solubility_200.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\baseline.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\efflux_slider_baseline_3.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\efflux_threshold_0.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\efflux_threshold_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\papp_threshold_20.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\papp_threshold_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\supplemental_sliders\\supplemental_defaults_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_fresh\\two_endpoints.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 15236,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\audited_demo_defaults_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\audited_multiple_failures.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\audited_multiple_failures_reordered.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\baseline.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\discard_censored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\efflux_enabled.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\hlm_bound_threshold_5.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 7618,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\hlm_bound_threshold_50.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 7618,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\no_matching_cards.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\reordered.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\restored_defaults.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\restored_threshold.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\search_real_id.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\solubility_200.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\main_initial\\two_endpoints.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 15236,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\all_four_endpoints.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\all_four_restored_defaults.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\audited_demo_defaults_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\audited_multiple_failures.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\audited_multiple_failures_reordered.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\baseline.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\discard_censored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\display_36_cards.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\display_pass_only.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\efflux_enabled.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\hlm_bound_threshold_5.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 7618,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\hlm_bound_threshold_50.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 7618,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\no_matching_cards.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\reordered.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\restored_defaults.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\restored_threshold.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\search_real_id.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\solubility_200.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\baseline.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\efflux_slider_baseline_3.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\efflux_threshold_0.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\efflux_threshold_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 30472,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\papp_threshold_20.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\papp_threshold_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\supplemental_sliders\\supplemental_defaults_restored.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 22854,
+      "status": "PASSED"
+    },
+    {
+      "file": "evidence\\browser\\replacement_final\\two_endpoints.json",
+      "ids_compared": 7618,
+      "gate_statuses_compared": 15236,
+      "status": "PASSED"
+    }
+  ],
+  "scope": "All per-ID statuses, gates, summaries, first failures, and assay opportunities in each downloaded JSON"
+}

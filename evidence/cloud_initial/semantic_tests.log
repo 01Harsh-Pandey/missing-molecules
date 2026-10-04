@@ -1,0 +1,47 @@
+COMMAND: ["/tmp/uv-venv/bin/python", "test_science.py"]
+EXIT CODE: 0
+STDOUT:
+
+STDERR:
+test_ambiguous_qualifier_rejected (__main__.IntervalSemantics.test_ambiguous_qualifier_rejected) ... ok
+test_bad_direction_and_threshold_rejected (__main__.IntervalSemantics.test_bad_direction_and_threshold_rejected) ... ok
+test_censored_values_can_prove_failure (__main__.IntervalSemantics.test_censored_values_can_prove_failure) ... ok
+test_censored_values_can_prove_pass (__main__.IntervalSemantics.test_censored_values_can_prove_pass) ... ok
+test_domain_boundary_does_not_create_an_exact_observation (__main__.IntervalSemantics.test_domain_boundary_does_not_create_an_exact_observation) ... ok
+test_exact_inclusive_boundary (__main__.IntervalSemantics.test_exact_inclusive_boundary) ... ok
+test_finite_witnesses_agree_with_interval_certificates (__main__.IntervalSemantics.test_finite_witnesses_agree_with_interval_certificates) ... ok
+test_missing_and_invalid_never_certify (__main__.IntervalSemantics.test_missing_and_invalid_never_certify) ... ok
+test_open_lower_boundary (__main__.IntervalSemantics.test_open_lower_boundary) ... ok
+test_open_upper_boundary (__main__.IntervalSemantics.test_open_upper_boundary) ... ok
+test_physical_domain_intersects_censored_interval (__main__.IntervalSemantics.test_physical_domain_intersects_censored_interval) ... ok
+test_positive_bound_preserves_open_lower_endpoint (__main__.IntervalSemantics.test_positive_bound_preserves_open_lower_endpoint) ... ok
+test_qualifier_around_zero_respects_the_physical_domain (__main__.IntervalSemantics.test_qualifier_around_zero_respects_the_physical_domain) ... ok
+test_separate_modifier (__main__.IntervalSemantics.test_separate_modifier) ... ok
+test_threshold_can_change_certainty (__main__.IntervalSemantics.test_threshold_can_change_certainty) ... ok
+test_unicode_and_scientific_notation (__main__.IntervalSemantics.test_unicode_and_scientific_notation) ... ok
+test_adding_gate_can_only_shrink_compatible_shortlist (__main__.PopulationSemantics.test_adding_gate_can_only_shrink_compatible_shortlist) ... ok
+test_adding_gates_never_creates_a_new_pass (__main__.PopulationSemantics.test_adding_gates_never_creates_a_new_pass) ... ok
+test_all_gate_logic_and_denominator (__main__.PopulationSemantics.test_all_gate_logic_and_denominator) ... ok
+test_duplicate_and_unknown_gates_rejected (__main__.PopulationSemantics.test_duplicate_and_unknown_gates_rejected) ... ok
+test_empty_gate_set_rejected (__main__.PopulationSemantics.test_empty_gate_set_rejected) ... ok
+test_information_loss_only_widens_bounds (__main__.PopulationSemantics.test_information_loss_only_widens_bounds) ... ok
+test_one_failure_overrides_missing (__main__.PopulationSemantics.test_one_failure_overrides_missing) ... ok
+test_only_blocker_counts (__main__.PopulationSemantics.test_only_blocker_counts) ... ok
+test_order_cannot_change_final_decision (__main__.PopulationSemantics.test_order_cannot_change_final_decision) ... ok
+test_order_changes_attribution_for_multi_failure (__main__.PopulationSemantics.test_order_changes_attribution_for_multi_failure) ... ok
+test_single_blocker_is_subset_of_any_blocker (__main__.PopulationSemantics.test_single_blocker_is_subset_of_any_blocker) ... ok
+test_ambiguous_normalized_headers_fail_closed (__main__.SourceSchema.test_ambiguous_normalized_headers_fail_closed) ... ok
+test_conflicting_ids_fail_closed (__main__.SourceSchema.test_conflicting_ids_fail_closed) ... ok
+test_direct_qualifiers_preserved (__main__.SourceSchema.test_direct_qualifiers_preserved) ... ok
+test_duplicate_headers_fail_closed (__main__.SourceSchema.test_duplicate_headers_fail_closed) ... ok
+test_identical_duplicates_explicitly_counted (__main__.SourceSchema.test_identical_duplicates_explicitly_counted) ... ok
+test_missing_identifier_rejected (__main__.SourceSchema.test_missing_identifier_rejected) ... ok
+test_separate_qualifier_columns (__main__.SourceSchema.test_separate_qualifier_columns) ... ok
+test_short_and_long_rows_fail_closed (__main__.SourceSchema.test_short_and_long_rows_fail_closed) ... ok
+test_unrecognized_schema_fail_closed (__main__.SourceSchema.test_unrecognized_schema_fail_closed) ... ok
+test_utf8_bom_and_stereochemical_smiles_preserved (__main__.SourceSchema.test_utf8_bom_and_stereochemical_smiles_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.021s
+
+OK

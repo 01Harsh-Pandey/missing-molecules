@@ -1,0 +1,13 @@
+{
+  "status": "SANDBOX_TERMINATED_AFTER_COMPLETED_VALIDATION",
+  "checked_at_utc": "2026-10-04T20:24:21.131303+00:00",
+  "checked_at_ist": "2026-10-05 01:54:21 IST",
+  "endpoint": "/api/sessions",
+  "http_status": 410,
+  "response": "sandbox terminated",
+  "previously_validated_url": "https://sb-8488739ba8c58fd1.sb.molab.run/?view-as=present",
+  "validation_results_preserved": true,
+  "final_notebook_downloaded_before_termination": true,
+  "final_report_sync": "BLOCKED_BY_TERMINATED_SANDBOX",
+  "required_action": "Reopen the saved notebook or import missing_molecules.py in a new Python-backed molab session and provide its new Pair with an agent connection prompt."
+}

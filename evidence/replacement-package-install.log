@@ -1,0 +1,139 @@
+[I 261004 20:28:45 pypi_package_manager:415] Installing in marimo==0.25.1 with 'uv pip install'
+[I 261004 20:28:45 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'marimo==0.25.1', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 25 packages in 403ms
+Downloading pygments (1.2MiB)
+Downloading loro (3.4MiB)
+Downloading marimo (48.5MiB)
+Downloading jedi (4.7MiB)
+ Downloaded pygments
+ Downloaded loro
+ Downloaded jedi
+ Downloaded marimo
+Prepared 25 packages in 2.24s
+Installed 25 packages in 215ms
+ + anyio==4.15.1
+ + click==8.5.0
+ + docutils==0.23
+ + h11==0.16.0
+ + idna==3.20
+ + itsdangerous==2.2.0
+ + jedi==0.20.0
+ + loro==1.16.2
+ + marimo==0.25.1
+ + markdown==3.11
+ + msgspec==0.22.0
+ + narwhals==2.26.0
+ + packaging==26.3
+ + parso==0.8.7
+ + psutil==7.2.2
+ + pygments==2.21.0
+ + pymdown-extensions==11.0.2
+ + python-multipart==0.0.32
+ + pyyaml==6.0.3
+ + pyzmq==27.2.0
+ + starlette==1.7.0
+ + tomlkit==0.15.1
+ + typing-extensions==4.16.0
+ + uvicorn==0.54.0
+ + websockets==17.2
+[I 261004 20:28:48 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:48 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 20:28:48 pypi_package_manager:415] Installing in rdkit==2026.3.6 with 'uv pip install'
+[I 261004 20:28:48 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'rdkit==2026.3.6', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 3 packages in 280ms
+Downloading numpy (15.9MiB)
+Downloading pillow (6.6MiB)
+ Downloaded pillow
+ Downloaded numpy
+Prepared 2 packages in 3.04s
+Installed 2 packages in 27ms
+ + numpy==2.5.3
+ + pillow==12.3.0
+[I 261004 20:28:52 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:52 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 20:28:52 pypi_package_manager:415] Installing in anywidget==0.9.18 with 'uv pip install'
+[I 261004 20:28:52 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'anywidget==0.9.18', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 23 packages in 374ms
+Downloading widgetsnbextension (2.1MiB)
+ Downloaded widgetsnbextension
+Prepared 18 packages in 374ms
+Installed 18 packages in 33ms
+ + anywidget==0.9.18
+ + asttokens==3.0.2
+ + comm==0.2.3
+ + executing==2.2.1
+ + ipython==9.17.1
+ + ipython-pygments-lexers==1.1.1
+ + ipywidgets==8.1.9
+ + jupyterlab-widgets==3.0.17
+ + matplotlib-inline==0.2.2
+ + pexpect==4.9.0
+ + prompt-toolkit==3.0.53
+ + psygnal==0.16.1
+ + ptyprocess==0.7.0
+ + pure-eval==0.2.4
+ + stack-data==0.6.3
+ + traitlets==5.16.1
+ + wcwidth==0.9.1
+ + widgetsnbextension==4.0.16
+[I 261004 20:28:53 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:53 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 20:28:53 pypi_package_manager:415] Installing in traitlets==5.14.3 with 'uv pip install'
+[I 261004 20:28:53 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'traitlets==5.14.3', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 1 package in 75ms
+Prepared 1 package in 211ms
+Uninstalled 1 package in 0.91ms
+Installed 1 package in 8ms
+ - traitlets==5.16.1
+ + traitlets==5.14.3
+[I 261004 20:28:53 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:53 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 20:28:54 pypi_package_manager:415] Installing in numpy<2.5 with 'uv pip install'
+[I 261004 20:28:54 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'numpy<2.5', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 1 package in 227ms
+Downloading numpy (15.9MiB)
+ Downloaded numpy
+Prepared 1 package in 762ms
+Uninstalled 1 package in 18ms
+Installed 1 package in 26ms
+ - numpy==2.5.3
+ + numpy==2.4.6
+[I 261004 20:28:55 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:55 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 20:28:55 pypi_package_manager:415] Installing in websockets<17 with 'uv pip install'
+[I 261004 20:28:55 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'websockets<17', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 1 package in 233ms
+Prepared 1 package in 313ms
+Uninstalled 1 package in 1ms
+Installed 1 package in 9ms
+ - websockets==17.2
+ + websockets==16.1.1
+[I 261004 20:28:56 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:56 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 20:28:56 pypi_package_manager:415] Installing in jedi<0.20 with 'uv pip install'
+[I 261004 20:28:56 pypi_package_manager:448] Running command: ['uv', 'pip', 'install', 'jedi<0.20', '-p', '/tmp/uv-venv/bin/python']
+Using Python 3.13.11 environment at: /tmp/uv-venv
+Resolved 2 packages in 127ms
+Downloading jedi (1.5MiB)
+ Downloaded jedi
+Prepared 1 package in 472ms
+Uninstalled 1 package in 181ms
+Installed 1 package in 49ms
+ - jedi==0.20.0
+ + jedi==0.19.2
+[I 261004 20:28:57 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 20:28:57 pypi_package_manager:672] Listing packages with 'uv pip list'
+installed marimo==0.25.1
+installed rdkit==2026.3.6
+installed anywidget==0.9.18
+installed traitlets==5.14.3
+installed numpy<2.5
+installed websockets<17
+installed jedi<0.20
+REPLACEMENT_PINNED_PACKAGE_INSTALL_FINISHED

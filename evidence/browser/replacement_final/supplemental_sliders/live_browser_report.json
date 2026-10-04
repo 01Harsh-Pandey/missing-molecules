@@ -1,0 +1,475 @@
+{
+  "url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+  "scope": "final_notebook",
+  "notebook": "remote/notebook.py",
+  "chemistry_validated": true,
+  "phase": "replacement_final_supplemental_threshold_sliders",
+  "limitation": null,
+  "started_at": "2026-10-04T20:48:21.463Z",
+  "checks": [
+    {
+      "name": "Full chemistry findings match the live baseline and molecule structures render",
+      "status": "PASSED"
+    },
+    {
+      "name": "Initial widget summary equals downloaded Python result",
+      "status": "PASSED",
+      "evidence": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      }
+    },
+    {
+      "name": "Papp slider changes Python detail, widget, policy table and downloaded decisions, then restores defaults",
+      "status": "PASSED"
+    },
+    {
+      "name": "Efflux slider changes Python detail, widget, policy table and downloaded decisions, then restores default question",
+      "status": "PASSED"
+    },
+    {
+      "name": "Supplemental present-view threshold checks have no browser or notebook exception errors",
+      "status": "PASSED"
+    }
+  ],
+  "snapshots": {
+    "baseline": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\baseline.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        }
+      ]
+    },
+    "papp_threshold_20": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\papp_threshold_20.json",
+      "summary": {
+        "n": 7618,
+        "pass": 414,
+        "fail": 4351,
+        "unresolved": 2853,
+        "lower": 414,
+        "upper": 3267,
+        "complete_decisions": 4765
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 20,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 2316
+        }
+      ]
+    },
+    "papp_threshold_restored": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\papp_threshold_restored.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        }
+      ]
+    },
+    "efflux_slider_baseline_3": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\efflux_slider_baseline_3.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1228,
+        "fail": 3379,
+        "unresolved": 3011,
+        "lower": 1228,
+        "upper": 4239,
+        "complete_decisions": 4607
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp",
+        "efflux"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        },
+        "efflux": {
+          "value": 3,
+          "unit": "ratio",
+          "direction": "max"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp",
+        "efflux"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        },
+        {
+          "endpoint": "efflux",
+          "first_fail": 831
+        }
+      ]
+    },
+    "efflux_threshold_0": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\efflux_threshold_0.json",
+      "summary": {
+        "n": 7618,
+        "pass": 0,
+        "fail": 4808,
+        "unresolved": 2810,
+        "lower": 0,
+        "upper": 2810,
+        "complete_decisions": 4808
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp",
+        "efflux"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        },
+        "efflux": {
+          "value": 0,
+          "unit": "ratio",
+          "direction": "max"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp",
+        "efflux"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        },
+        {
+          "endpoint": "efflux",
+          "first_fail": 2260
+        }
+      ]
+    },
+    "efflux_threshold_restored": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\efflux_threshold_restored.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1228,
+        "fail": 3379,
+        "unresolved": 3011,
+        "lower": 1228,
+        "upper": 4239,
+        "complete_decisions": 4607
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp",
+        "efflux"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        },
+        "efflux": {
+          "value": 3,
+          "unit": "ratio",
+          "direction": "max"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp",
+        "efflux"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        },
+        {
+          "endpoint": "efflux",
+          "first_fail": 831
+        }
+      ]
+    },
+    "supplemental_defaults_restored": {
+      "path": "C:\\Users\\harsh\\Documents\\Codex\\2026-10-04\\if\\work\\molab-finalization\\evidence\\browser\\replacement_final\\supplemental_sliders\\supplemental_defaults_restored.json",
+      "summary": {
+        "n": 7618,
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070,
+        "complete_decisions": 4392
+      },
+      "enabled_endpoints": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "thresholds": {
+        "ksol": {
+          "value": 10,
+          "unit": "µM",
+          "direction": "min"
+        },
+        "hlm": {
+          "value": 50,
+          "unit": "mL/min/kg",
+          "direction": "max"
+        },
+        "papp": {
+          "value": 1,
+          "unit": "10⁻⁶ cm/s",
+          "direction": "min"
+        }
+      },
+      "discard_censored": false,
+      "gate_order": [
+        "ksol",
+        "hlm",
+        "papp"
+      ],
+      "first_failure_attribution": [
+        {
+          "endpoint": "ksol",
+          "first_fail": 1329
+        },
+        {
+          "endpoint": "hlm",
+          "first_fail": 706
+        },
+        {
+          "endpoint": "papp",
+          "first_fail": 513
+        }
+      ]
+    }
+  },
+  "console_errors": [],
+  "page_errors": [],
+  "verified_findings_sha256": "bc90669e4e3a9f6a6006b4a71d33233e9400f1dcce45ce31d6a889a315411e12",
+  "tested_notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "browser_version": "154.0.8037.95",
+  "consumer_session_id": "s_ax1j8a",
+  "hosted_writer_takeover": "ALREADY_WRITER_OR_APP",
+  "hosted_frames": [
+    {
+      "name": "",
+      "url": "https://sb-292adb2b15a38c98.sb.molab.run/"
+    }
+  ],
+  "hosted_view": "present",
+  "hosted_initial_controls": "Notebook defaults restored through actual browser UI; this existing-session run is not itself fresh validation",
+  "status": "PASSED",
+  "completed_at": "2026-10-04T20:48:56.333Z",
+  "marimo_transport": {
+    "kernel_ready": true,
+    "completed_runs": 14,
+    "busy_cells_at_end": []
+  }
+}

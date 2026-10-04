@@ -1,0 +1,1 @@
+{"phase": "before_restart", "pid": 80, "python": "3.13.11 (main, Feb  3 2026, 03:08:54) [GCC 14.2.0]", "executable": "/tmp/uv-venv/bin/python", "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b", "cell_count": 21, "cell_errors": [], "globals_ready": true}

@@ -1,0 +1,15 @@
+{
+  "status": "VISUALLY_INSPECTED",
+  "scope": "final_notebook",
+  "captured_at": "2026-10-04T16:11:53.281Z",
+  "note": "Full main notebook desktop and 390px board/control captures inspected. Real RDKit labeled ring and bond drawings render; enlarged E-0018881 depiction has explicit H stereochemical wedges. Molecule IDs and status badges are readable. Molab native editor/select controls overlay the bottom of the long viewport capture. Horizontal molecule evidence table scroll verified by actual scrollLeft change.",
+  "evidence": [
+    "live_desktop.png",
+    "live_desktop_board.png",
+    "live_mobile_controls.png",
+    "live_mobile_board_viewport.png",
+    "live_mobile_board.png",
+    "live_mobile_details.png",
+    "rdkit_stereo_E-0018881_enlarged.png"
+  ]
+}

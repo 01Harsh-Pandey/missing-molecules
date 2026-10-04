@@ -1,0 +1,5 @@
+COMMAND: ["/tmp/uv-venv/bin/python", "-m", "marimo", "check", "notebook.py", "--strict"]
+EXIT CODE: 0
+STDOUT:
+
+STDERR:

@@ -1,0 +1,275 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.1",
+    "script_metadata_hash": "de20641ee5089dd226d18d43a9392f04"
+  },
+  "cells": [
+    {
+      "id": "tWOX",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='tWOX-0' random-id='3dba955c-73c3-f030-88d1-ed26ea3b4533'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;fd3aceeb979f4890a6598f022d4a21df&quot;}' data-label='null' data-model-id='&quot;fd3aceeb979f4890a6598f022d4a21df&quot;'></marimo-anywidget></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OCmG",
+      "code_hash": "bdaf441a69f008255a7ac1fe4afe01e1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NZES",
+      "code_hash": "407f0133c106229513ffad1494535bd3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLZW",
+      "code_hash": "e223f656c40697924d8b419be949a057",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "\n<style>\n.mm-hero{background:#123d43;color:#f1f5ec;border-radius:20px;padding:36px 40px;margin:8px 0 22px}\n.mm-kicker{font:700 11px/1.5 ui-sans-serif,system-ui;letter-spacing:.17em;text-transform:uppercase;color:#a9cbc4}\n.mm-hero h1{font:600 clamp(32px,5vw,58px)/1.08 ui-sans-serif,system-ui;letter-spacing:-.055em;margin:15px 0 15px}\n.mm-hero p{font:400 16px/1.6 ui-sans-serif,system-ui;max-width:780px;color:#d0e1da}\n.mm-hero .mm-credit{font-size:12px;color:#adc9c1;margin-top:22px}\n.mm-panel{border:1px solid #d7e2db;background:#f6f9f5;border-radius:14px;padding:20px;margin:10px 0}\n.mm-section{font:700 11px/1.6 ui-sans-serif,system-ui;letter-spacing:.13em;text-transform:uppercase;color:#4d7775;margin-top:24px}\n.mm-details{font:400 13px/1.7 ui-sans-serif,system-ui;color:#24444a}\n.mm-control-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px 20px;max-width:100%}\n.mm-control-grid>div{min-width:0}\n.mm-table-scroll{max-width:100%;overflow-x:auto}\n.mm-table{border-collapse:collapse;width:100%;min-width:720px;font:400 12px/1.7 ui-sans-serif,system-ui}\n.mm-table th{text-align:left;border-bottom:2px solid #dae4dd;padding:8px;color:#355d60}\n.mm-table td{padding:8px;border-bottom:1px solid #e6eee7;vertical-align:top}\n.mm-table .pass{color:#14664f;font-weight:650}.mm-table .fail{color:#a83d44;font-weight:650}.mm-table .unresolved{color:#8a620d;font-weight:650}\n@media(max-width:640px){.mm-hero{padding:25px 22px}}\n</style>\n<section class=\"mm-hero\">\n  <div class=\"mm-kicker\">OpenADMET \u00d7 marimo \u00b7 an interactive evidence lab</div>\n  <h1>The Missing Molecules</h1>\n  <p>How much can we trust an ADMET shortlist when some assays were never measured,\n  and others only tell us \u201cabove\u201d or \u201cbelow\u201d a detection limit?</p>\n  <p>Move a threshold. Inspect a structure. Discover which decisions the evidence can settle.</p>\n  <div class=\"mm-credit\">Harsh Pandey \u00b7 ExpansionRx / OpenADMET data \u00b7 AI-assisted development disclosed below</div>\n</section>\n"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Avgl",
+      "code_hash": "d90e987e7e3265d82e6e3dc8581a20bf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>The question:</strong> how do missing and censored measurements change the set of molecules\nwe can certify against the same screening goals?</span>\n<span class=\"paragraph\"><strong>Teaching example (invented values):</strong> imagine requiring solubility <strong>\u226510 \u00b5M</strong>.\nA reported value <strong>&gt;100 \u00b5M</strong> already establishes\na pass; <strong>&lt;5 \u00b5M</strong> establishes a failure. <strong>&lt;20 \u00b5M</strong> remains unresolved at this threshold.\nNone of these observations is an exact measurement at its assay limit.</span>\n<span class=\"paragraph\">We use four endpoints from ExpansionRx's released campaigns: kinetic solubility,\nhuman liver microsomal clearance, Caco-2 permeability A\u2192B, and Caco-2 efflux ratio.\nThe targets below are <strong>editable teaching examples</strong>, not universal drug-selection\ncriteria. Passing them does not establish efficacy, safety, or clinical suitability.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ockd",
+      "code_hash": "720e9c16fac7e2b62396105d1088358e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Zsho",
+      "code_hash": "761664fd2369690ed158d95e655bdf1f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HYTs",
+      "code_hash": "7ec354b97471c422994b1d472fbdb57b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Live source audit:</strong> 7,618 CSV rows \u2192\n7,618 molecule IDs \u2192\n<strong>7,618 valid-structure molecule IDs</strong> in this lab.\n0 invalid structures are excluded explicitly.</span>\n<span class=\"paragraph\">Source: <strong>Embedded verified source snapshot</strong> \u00b7 pinned revision <code>6b898ccc43d1</code> \u00b7\ncounts refer to molecule IDs, not wells, assay observations, or unique chemical structures.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LbRz",
+      "code_hash": "ad839d4e97c286705a81af68517ae823",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div class=\"mm-section\">01 \u00b7 Define the screening question</div><marimo-ui-element object-id='LbRz-0' random-id='96672b85-4ad7-e064-d8c2-2b794034235e'><marimo-multiselect data-initial-value='[&quot;Kinetic solubility&quot;,&quot;Human microsomal clearance&quot;,&quot;Caco-2 permeability A\u2192B&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eRequired endpoints&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Kinetic solubility&quot;,&quot;Human microsomal clearance&quot;,&quot;Caco-2 permeability A\u2192B&quot;,&quot;Caco-2 efflux ratio&quot;]' data-full-width='true' data-disabled='false'></marimo-multiselect></marimo-ui-element><div class=\"mm-control-grid\"><div><marimo-ui-element object-id='LbRz-1' random-id='bb3ddab0-0893-8403-f1fa-85b2e7e06acc'><marimo-slider data-initial-value='10' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSolubility \u2265 (\u00b5M)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='true'></marimo-slider></marimo-ui-element></div><div><marimo-ui-element object-id='LbRz-2' random-id='45303b02-4103-6806-5dd3-11c1ff546f90'><marimo-slider data-initial-value='50' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eHLM clearance \u2264 (mL/min/kg)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='300' data-step='5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='true'></marimo-slider></marimo-ui-element></div><div><marimo-ui-element object-id='LbRz-3' random-id='45371692-e2a3-ce56-5f02-961420db3f78'><marimo-slider data-initial-value='1' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003ePermeability \u2265 (10\u207b\u2076 cm/s)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='20' data-step='0.5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='true'></marimo-slider></marimo-ui-element></div><div><marimo-ui-element object-id='LbRz-4' random-id='b5cd060f-4617-5ca5-4ae2-b99aeb8818a1'><marimo-slider data-initial-value='3' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eEfflux ratio \u2264&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='20' data-step='0.5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='true'></marimo-slider></marimo-ui-element></div></div><marimo-ui-element object-id='LbRz-5' random-id='75453b2c-811b-b3d4-1e68-9aaf5b599a41'><marimo-checkbox data-initial-value='false' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eExperiment: discard censored measurements&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "STsE",
+      "code_hash": "9415179e39d78bb85ed763248fd67228",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pvXz",
+      "code_hash": "02bda05c0ab524c120bd9fe50b9b27f1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zdoN",
+      "code_hash": "a3b6bb172d8c24568cc664b55cc20889",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div class=\"mm-control-grid\"><div><marimo-ui-element object-id='zdoN-0' random-id='224e7b60-e1c0-b7ef-0a83-6825908b395c'><marimo-dropdown data-initial-value='[&quot;All statuses&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eMolecules to display&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;All statuses&quot;,&quot;Unresolved&quot;,&quot;Evidence pass&quot;,&quot;Evidence fail&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='true' data-disabled='false'></marimo-dropdown></marimo-ui-element></div><div><marimo-ui-element object-id='zdoN-1' random-id='f14645bc-81f3-63ea-0697-8f444cb43d46'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFind a molecule ID&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;e.g. E-001&quot;' data-kind='&quot;text&quot;' data-full-width='true' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element></div><div><marimo-ui-element object-id='zdoN-2' random-id='8e67787b-bd4f-c660-ce4b-8f6cc5c50674'><marimo-slider data-initial-value='12' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCards shown&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='6' data-stop='36' data-step='6' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='true'></marimo-slider></marimo-ui-element></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iqnP",
+      "code_hash": "879d1e18768cd73cab8420cfb5e51a9e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zlqC",
+      "code_hash": "e689c78e4516dcd4b559d3e6a6a1c466",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HPor",
+      "code_hash": "627c20e458941e859ad6ee37fd6a1a63",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='zlqC-0' random-id='8e2e322e-6e92-7268-c5e7-f6f33e296dd8'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;5427d9f13c154fd5936bc795855da404&quot;}' data-label='null' data-model-id='&quot;5427d9f13c154fd5936bc795855da404&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qQqB",
+      "code_hash": "a535945692f43a71701b10973ade170c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<section class=\"mm-panel mm-details\"><strong>E-0001827</strong> \u00b7 molecule evidence<div class=\"mm-table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Molecule evidence table; scroll horizontally on narrow screens\"><table class=\"mm-table\"><thead><tr><th>Endpoint</th><th>Reported</th><th>Possible values</th><th>Gate</th><th>Decision</th><th>Evidence</th></tr></thead><tbody><tr><td>Kinetic solubility \u00b7 focused</td><td>Missing</td><td>No measurement</td><td>\u2265 10 \u00b5M</td><td class=\"unresolved\">unresolved</td><td>No measurement</td></tr><tr><td>Human microsomal clearance</td><td>Missing</td><td>No measurement</td><td>\u2264 50 mL/min/kg</td><td class=\"unresolved\">unresolved</td><td>No measurement</td></tr><tr><td>Caco-2 permeability A\u2192B</td><td>Missing</td><td>No measurement</td><td>\u2265 1 10\u207b\u2076 cm/s</td><td class=\"unresolved\">unresolved</td><td>No measurement</td></tr></tbody></table></div><p style=\"overflow-wrap:anywhere\">SMILES: <code>Cc1c2ccncc2cc2c3cc(OCCCN4CCN(C)CC4)ccc3n(C)c12</code></p></section>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lDEv",
+      "code_hash": "ef4e1b39c8a548855c55e8dbb7356057",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div class=\"mm-section\">02 \u00b7 What did cleaning the data erase?</div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Keeping the assay bounds settles <strong>162 additional passes</strong> and\n<strong>100 additional failures</strong> under your current gates.\nThese decisions use information already present in the raw data; no model or imputation is involved.</span>\n<span class=\"paragraph\"><strong>Takeaway:</strong> discarding assay limits makes <strong>262 of 7,618\nmolecule-ID decisions unresolved</strong> (3.4% of this population).\nKeeping the bounds narrows the compatible shortlist from\n<strong>1,682\u20135,170</strong> to\n<strong>1,844\u20135,070</strong>.\nThe numbers follow the gates you choose; they describe this release and these illustrative\nthresholds, without modeling assay uncertainty beyond the published inequalities.</span>\n<span class=\"paragraph\">A censored value can be sufficient evidence even when it is unsuitable as an exact\nregression target. Flip <strong>\u201cdiscard censored measurements\u201d</strong> above and watch the\nlogical bounds widen or stay unchanged.</span></span><marimo-ui-element object-id='lDEv-0' random-id='1198a4ef-7ffc-1ea7-3515-695269a1440c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Evidence policy&#92;&quot;:&#92;&quot;Use exact values and assay bounds&#92;&quot;,&#92;&quot;Established passes&#92;&quot;:1844,&#92;&quot;Established failures&#92;&quot;:2548,&#92;&quot;Unresolved&#92;&quot;:3226,&#92;&quot;Compatible shortlist&#92;&quot;:&#92;&quot;1844\u20135070&#92;&quot;},{&#92;&quot;Evidence policy&#92;&quot;:&#92;&quot;Discard every censored value&#92;&quot;,&#92;&quot;Established passes&#92;&quot;:1682,&#92;&quot;Established failures&#92;&quot;:2448,&#92;&quot;Unresolved&#92;&quot;:3488,&#92;&quot;Compatible shortlist&#92;&quot;:&#92;&quot;1682\u20135170&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BsQw",
+      "code_hash": "bda0627ccb3f7f266ddfcfc04f89f0f4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div class=\"mm-section\">03 \u00b7 A liability waterfall can tell several stories</div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Use the arrow buttons on the evidence board to move an assay earlier or later.\nA molecule can fail several gates. A first-failure waterfall credits only the first\nfailed gate it encounters, so its attribution can change while the final shortlist\nstays fixed. These are accounting choices, not causal explanations of molecular liability.</span></span><marimo-ui-element object-id='BsQw-0' random-id='57127125-3ce0-d4df-681c-4d465f506b5f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Order&#92;&quot;:1,&#92;&quot;Assay&#92;&quot;:&#92;&quot;Kinetic solubility&#92;&quot;,&#92;&quot;Attributed first failures&#92;&quot;:1329},{&#92;&quot;Order&#92;&quot;:2,&#92;&quot;Assay&#92;&quot;:&#92;&quot;Human microsomal clearance&#92;&quot;,&#92;&quot;Attributed first failures&#92;&quot;:706},{&#92;&quot;Order&#92;&quot;:3,&#92;&quot;Assay&#92;&quot;:&#92;&quot;Caco-2 permeability A\u2192B&#92;&quot;,&#92;&quot;Attributed first failures&#92;&quot;:513}]&quot;' data-total-rows='3' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HrUU",
+      "code_hash": "99a8cae6845f2185cf5ae2dd535ef9ae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div class=\"mm-section\">04 \u00b7 Which measurement could settle a decision?</div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Single unresolved gate:</strong> resolving this one assay would settle that molecule's\nstatus under the current criteria, whether it passes or fails. Other unresolved\ngates can also matter: a failure could reject the molecule, while a pass might\nleave further assays to resolve.</span>\n<span class=\"paragraph\">The counts below measure <strong>decision opportunity</strong>, not expected success, monetary\nvalue, or a guarantee that a repeated assay would return an uncensored result.</span></span><marimo-ui-element object-id='HrUU-0' random-id='15ccde61-21f2-7948-886e-01e2a1251bdb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Assay&#92;&quot;:&#92;&quot;Caco-2 permeability A\u2192B&#92;&quot;,&#92;&quot;Only unresolved gate&#92;&quot;:1092,&#92;&quot;Unresolved gate in otherwise viable IDs&#92;&quot;:2815,&#92;&quot;Focused on board&#92;&quot;:false},{&#92;&quot;Assay&#92;&quot;:&#92;&quot;Human microsomal clearance&#92;&quot;,&#92;&quot;Only unresolved gate&#92;&quot;:392,&#92;&quot;Unresolved gate in otherwise viable IDs&#92;&quot;:2070,&#92;&quot;Focused on board&#92;&quot;:false},{&#92;&quot;Assay&#92;&quot;:&#92;&quot;Kinetic solubility&#92;&quot;,&#92;&quot;Only unresolved gate&#92;&quot;:7,&#92;&quot;Unresolved gate in otherwise viable IDs&#92;&quot;:115,&#92;&quot;Focused on board&#92;&quot;:true}]&quot;' data-total-rows='3' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aKkw",
+      "code_hash": "7d482d98e058a1ffb5511e203d8e64de",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "mMqW",
+      "code_hash": "43b8d00ec2fc3a17345d29dc23b80110",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-accordion data-labels='[&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eData provenance and chemistry audit&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eWhat the bounds mean\u2014and what this lab cannot establish&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;,&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eAI use, contribution, and reproduce this notebook&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;]' data-multiple='false' data-expanded='[]'><div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Source: <a href=\"https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-data\" rel=\"noopener noreferrer\" target=\"_blank\">ExpansionRx / OpenADMET full release</a>.\nDataset DOI: <a href=\"https://doi.org/10.57967/hf/9687\" rel=\"noopener noreferrer\" target=\"_blank\">10.57967/hf/9687</a>.\nLicense: <strong>CC BY 4.0</strong>. Credit: Expansion Therapeutics and the OpenADMET Consortium.\nMeasurements and structures are redistributed unchanged when embedded; the decision annotations are this notebook's additions.</span>\n<span class=\"paragraph\"><strong>SHA-256:</strong> <code>f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c</code>.\nIdentical repeated source rows removed: <strong>0</strong>.\nThe parser checks IDs, expected columns, qualifiers, and non-finite or malformed values;\nambiguous schemas and conflicting repeated IDs stop execution for inspection.</span>\n<span class=\"paragraph\">RDKit parses the published SMILES and preserves stereochemistry in depictions.\nMulti-fragment IDs are retained and flagged: <strong>0</strong>.\nNo salt stripping, tautomer merging, or averaging of repeated assays is performed.\nPublished salts and tautomer forms may encode assay-specific context we cannot reconstruct;\nunspecified stereochemistry remains unspecified. No stereoisomer is invented.\nDistinct canonical isomeric structures: <strong>7617</strong>;\nstructure groups with multiple IDs: <strong>1</strong>.\nThese grouped structures remain separate published IDs, so their decisions are not independent samples.</span></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>All parsed source IDs (7,618):</strong></span></span><marimo-ui-element object-id='mMqW-0' random-id='179f4c36-2371-a278-4b71-03ee90485d6b'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Kinetic solubility&#92;&quot;,&#92;&quot;exact&#92;&quot;:7298,&#92;&quot;censored&#92;&quot;:125,&#92;&quot;missing&#92;&quot;:195,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:0},{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Human microsomal clearance&#92;&quot;,&#92;&quot;exact&#92;&quot;:4542,&#92;&quot;censored&#92;&quot;:279,&#92;&quot;missing&#92;&quot;:2796,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:1},{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Caco-2 permeability A\u2192B&#92;&quot;,&#92;&quot;exact&#92;&quot;:3773,&#92;&quot;censored&#92;&quot;:31,&#92;&quot;missing&#92;&quot;:3812,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:2},{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Caco-2 efflux ratio&#92;&quot;,&#92;&quot;exact&#92;&quot;:3777,&#92;&quot;censored&#92;&quot;:26,&#92;&quot;missing&#92;&quot;:3815,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:0}]&quot;' data-total-rows='4' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Valid-structure analysis IDs (7,618):</strong></span></span><marimo-ui-element object-id='mMqW-1' random-id='49c76774-f20a-dc9c-8a5a-36e1e834ca60'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Kinetic solubility&#92;&quot;,&#92;&quot;exact&#92;&quot;:7298,&#92;&quot;censored&#92;&quot;:125,&#92;&quot;missing&#92;&quot;:195,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:0},{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Human microsomal clearance&#92;&quot;,&#92;&quot;exact&#92;&quot;:4542,&#92;&quot;censored&#92;&quot;:279,&#92;&quot;missing&#92;&quot;:2796,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:1},{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Caco-2 permeability A\u2192B&#92;&quot;,&#92;&quot;exact&#92;&quot;:3773,&#92;&quot;censored&#92;&quot;:31,&#92;&quot;missing&#92;&quot;:3812,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:2},{&#92;&quot;Endpoint&#92;&quot;:&#92;&quot;Caco-2 efflux ratio&#92;&quot;,&#92;&quot;exact&#92;&quot;:3777,&#92;&quot;censored&#92;&quot;:26,&#92;&quot;missing&#92;&quot;:3815,&#92;&quot;unparsed&#92;&quot;:0,&#92;&quot;invalid&#92;&quot;:0}]&quot;' data-total-rows='4' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element><marimo-json-output data-json-data='{&quot;valid_molecule_ids&quot;:7618,&quot;invalid_structure_ids&quot;:[],&quot;multi_fragment_ids&quot;:[],&quot;distinct_isomeric_structures&quot;:7617,&quot;repeated_structure_groups&quot;:1,&quot;repeated_structure_ids&quot;:{&quot;Cc1c2ccnc(C(=O)N[C@H](C)CN(C)C)c2cc2c3cc(OCCCN4CCN(C)CC4)ccc3n(C)c12&quot;:[&quot;E-0001829&quot;,&quot;E-0014119&quot;]}}' data-value-types='&quot;json&quot;'></marimo-json-output></div></div><div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">For each molecule, we evaluate the <strong>set</strong> of values compatible with each reported\nobservation against inclusive gates (\u2265 or \u2264). All gates must be established passes\nto certify a pass. Any established failure rejects the molecule. Everything else\nis unresolved. Missing, malformed, or physically invalid evidence never establishes a pass.</span>\n<span class=\"paragraph\">The compatible shortlist has a lower bound equal to the established passes and an\nupper bound equal to passes plus unresolved IDs. These are logical identification\nbounds under the displayed assay evidence, not statistical confidence intervals.\nThe upper bound permits all unresolved gates to pass jointly; chemistry correlations\nmay make it loose. Experimental uncertainty beyond reported qualifiers is not modeled.</span>\n<span class=\"paragraph\">This is a descriptive analysis of a selected set of drug-discovery campaigns.\nWe do not infer that missingness is random, explain why an assay is absent, recommend\nclinical treatment, or demonstrate an improved predictive model. There is no\ntrain/test evaluation: the raw release is explored as one population.</span></span></div><div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>AI disclosure:</strong> OpenAI ChatGPT/Codex assisted with concept development, Python,\nJavaScript, testing, and explanatory text. Harsh Pandey is responsible for final\nreview and submission. The custom EvidenceBoard widget implements linked molecule\ninspection, interval bounds, and the gate-order experiment; it is developed for this notebook.\nNo synthetic measurements are substituted for the released data.</span>\n<span class=\"paragraph\"><strong>Reproduce:</strong> use a normal Python-backed molab session or run\n<code>uv run --with marimo marimo edit --sandbox missing_molecules.py</code>.\nThe file declares its dependencies. Its source is pinned and checksum verified;\na finalized copy embeds the verified raw CSV. Without embedded data it loads the\nlocal snapshot or downloads that same pinned release. Network failure is explicit.\nRDKit needs a standard Python runtime; this notebook is not advertised as WASM compatible.</span>\n<span class=\"paragraph\">Suggested reader challenge: choose two endpoint gates, find a censored observation\nthat settles a decision, then tighten the threshold until the same observation\nbecomes unresolved. Explain the change using its possible-value interval.</span></span></div></marimo-accordion>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

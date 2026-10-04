@@ -1,0 +1,46 @@
+{
+  "status": "PASSED",
+  "action": "Authenticated POST /api/kernel/restart_session; dedicated code-mode help in the new kernel; all 21 cells executed and full verify_cloud.py repeated",
+  "url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+  "pid_before": 152,
+  "pid_after": 1726,
+  "python": "3.13.11 (main, Feb  3 2026, 03:08:54) [GCC 14.2.0]",
+  "executable": "/tmp/uv-venv/bin/python",
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "cell_count": 21,
+  "cell_errors": [],
+  "packages": {
+    "marimo": "0.25.1",
+    "rdkit": "2026.3.6",
+    "anywidget": "0.9.18",
+    "traitlets": "5.14.3",
+    "numpy": "2.4.6",
+    "websockets": "16.1.1",
+    "jedi": "0.19.2"
+  },
+  "loaded_module_versions": {
+    "marimo": "0.25.1",
+    "rdkit": "2026.03.6",
+    "anywidget": "0.9.18",
+    "traitlets": "5.14.3",
+    "numpy": "2.4.6",
+    "websockets": "16.1.1",
+    "jedi": "0.19.2"
+  },
+  "default_summary": {
+    "n": 7618,
+    "pass": 1844,
+    "fail": 2548,
+    "unresolved": 3226,
+    "lower": 1844,
+    "upper": 5070,
+    "complete_decisions": 4392
+  },
+  "cli_status": "SCIENCE_CHEMISTRY_AND_MARIMO_PASSED_BROWSER_AND_FRESH_SESSION_PENDING",
+  "session_inspection": {
+    "cell_count": 21,
+    "error_output_count": 0,
+    "errors": []
+  },
+  "browser_validation": "PENDING_SEPARATE_BROWSER_CHECK"
+}

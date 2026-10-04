@@ -1,0 +1,317 @@
+{
+  "submission_ready": true,
+  "validation_phase": "ALL_REQUESTED_NOTEBOOK_VALIDATION_PASSED",
+  "updated_at_utc": "2026-10-04T20:52:50.424646+00:00",
+  "updated_at_ist": "2026-10-05 02:22:50 IST",
+  "main_notebook": "missing_molecules.py",
+  "live_notebook_url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+  "runtime_notebook_path": "/marimo/notebook.py",
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "original_executable_cell_ast_sha256": "e166861bb993e28eeed6efebbaa7071c26027cb1fbb5e2a1ae3150d10911c279",
+  "original_executable_cells_unchanged": true,
+  "runtime": {
+    "python": "3.13.11",
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.41",
+    "packages": {
+      "marimo": "0.25.1",
+      "rdkit": "2026.3.6",
+      "anywidget": "0.9.18",
+      "traitlets": "5.14.3"
+    },
+    "persistent_compatibility_constraints": {
+      "numpy": "<2.5",
+      "websockets": "<17",
+      "jedi": "<0.20"
+    },
+    "resolved_compatibility_versions": {
+      "numpy": "2.4.6",
+      "websockets": "16.1.1",
+      "jedi": "0.19.2"
+    },
+    "evidence": "CLOUD_EXECUTION_REPORT.json",
+    "loaded_module_versions": {
+      "marimo": "0.25.1",
+      "rdkit": "2026.03.6",
+      "anywidget": "0.9.18",
+      "traitlets": "5.14.3",
+      "numpy": "2.4.6",
+      "websockets": "16.1.1",
+      "jedi": "0.19.2"
+    }
+  },
+  "imported_wrapper_config": {
+    "width": "medium",
+    "auto_download": [
+      "html"
+    ],
+    "requires_python": ">=3.13",
+    "original_executable_cell_ast_unchanged": true
+  },
+  "python_syntax": {
+    "status": "PASSED",
+    "evidence": [
+      "evidence/cloud/marimo_strict_check.log",
+      "CLOUD_EXECUTION_REPORT.json"
+    ]
+  },
+  "scientific_semantic_tests": {
+    "status": "PASSED",
+    "count": 37,
+    "data": "explicit synthetic semantic/parser fixtures against the actual notebook engine",
+    "evidence": "evidence/cloud/semantic_tests.log"
+  },
+  "source_download_and_checksum": {
+    "status": "PASSED",
+    "official_huggingface_zenodo_bytes_identical": true,
+    "bytes": 686791,
+    "md5": "27fae3d509fb1d9fd97cc94a4c9cccec",
+    "sha256": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c",
+    "attribution": "Expansion Therapeutics and the OpenADMET Consortium; CC BY 4.0",
+    "evidence": [
+      "verified_findings.json",
+      "INDEPENDENT_REVIEW.json"
+    ]
+  },
+  "actual_raw_schema": {
+    "status": "PASSED",
+    "rows": 7618,
+    "unique_published_ids": 7618,
+    "repeated_ids": 0,
+    "malformed_rows": 0,
+    "qualifiers": "inline inequalities; no separate modifier columns",
+    "evidence": "verified_findings.json"
+  },
+  "embedded_verified_source": {
+    "status": "PASSED",
+    "embedded_matches_verified_raw_bytes": true,
+    "cloud_validation_reembedded_data": false,
+    "evidence": "INDEPENDENT_REVIEW.json"
+  },
+  "full_data_logic_checks": {
+    "status": "PASSED",
+    "validation_mode": "full",
+    "endpoint_subsets": 15,
+    "all_gate_orders_checked": true,
+    "threshold_sensitivity_settings": 31,
+    "censor_removal_monotonicity": "row-level and aggregate",
+    "adding_gates_monotonicity": "all nested endpoint subsets",
+    "assay_opportunity_denominators": "single blocker <= any blocker <= unresolved IDs",
+    "evidence": [
+      "verified_findings.json",
+      "evidence/cloud/full_chemistry_and_data.log"
+    ]
+  },
+  "real_structure_rdkit_audit": {
+    "status": "PASSED",
+    "valid_structure_denominator": 7618,
+    "invalid_structure_ids": [],
+    "distinct_canonical_isomeric_structures": 7617,
+    "repeated_structure_groups": [
+      [
+        "E-0001829",
+        "E-0014119"
+      ]
+    ],
+    "multi_fragment_ids": [],
+    "ids_with_specified_atom_stereochemistry": 2054,
+    "ids_with_specified_bond_stereochemistry": 9,
+    "ids_with_unassigned_potential_atom_stereocenters": 232,
+    "nonisomeric_groups_with_multiple_isomeric_smiles": 549,
+    "counting_unit": "published molecule IDs; canonical groups are diagnostic and are not merged",
+    "evidence": "verified_findings.json"
+  },
+  "physical_measurement_anomalies": {
+    "policy": "Preserve original source strings as invalid/unresolved evidence; never coerce to zero",
+    "observations": [
+      {
+        "id": "E-0017007",
+        "endpoint": "hlm",
+        "raw": "< 0.0"
+      },
+      {
+        "id": "E-0027111",
+        "endpoint": "papp",
+        "raw": "< 0.00"
+      },
+      {
+        "id": "E-0027124",
+        "endpoint": "papp",
+        "raw": "< 0.00"
+      }
+    ],
+    "evidence": "verified_findings.json"
+  },
+  "independent_science_and_live_model_review": {
+    "status": "PASSED",
+    "independent_method": "Separate Decimal parser/classifier and AND-gate evaluator",
+    "all_live_exported_per_id_decisions_compared": 7618,
+    "all_live_exported_per_id_gate_statuses_compared": 22854,
+    "source_and_chemistry_fields_agree": true,
+    "default_counts": {
+      "interval": {
+        "pass": 1844,
+        "fail": 2548,
+        "unresolved": 3226,
+        "lower": 1844,
+        "upper": 5070
+      },
+      "discard_censored": {
+        "pass": 1682,
+        "fail": 2448,
+        "unresolved": 3488,
+        "lower": 1682,
+        "upper": 5170
+      }
+    },
+    "additional_settled_valid_id_decisions": 262,
+    "additional_certified_passes": 162,
+    "additional_certified_failures": 100,
+    "raw_counts_survive_full_chemistry_audit": true,
+    "evidence": [
+      "INDEPENDENT_REVIEW.json",
+      "evidence/live-baseline.json"
+    ]
+  },
+  "marimo_static_check": {
+    "status": "PASSED",
+    "command": "python -m marimo check notebook.py --strict",
+    "evidence": "evidence/cloud/marimo_strict_check.log"
+  },
+  "dependency_consistency": {
+    "status": "PASSED",
+    "evidence": "evidence/cloud/dependency_consistency.log"
+  },
+  "environment_lock": {
+    "status": "SUCCESSFUL_FULL_VALIDATION_RUNTIME",
+    "file": "requirements.lock.txt",
+    "limitation": "Linux environment snapshot; viewer/browser evidence and actual restarted kernel are recorded separately",
+    "evidence": "evidence/cloud/freeze_successful_environment.log"
+  },
+  "end_to_end_marimo_execution": {
+    "status": "PASSED",
+    "session_cell_count": 21,
+    "data_output_count": 20,
+    "exception_output_count": 0,
+    "evidence": [
+      "CLOUD_EXECUTION_REPORT.json",
+      "__marimo__/session/notebook.py.json",
+      "evidence/cloud/final_notebook_preview.html"
+    ]
+  },
+  "live_marimo_browser_integration": {
+    "status": "PASSED",
+    "initial_checks": 18,
+    "fresh_checks": 21,
+    "supplemental_slider_checks": 5,
+    "all_controls_exercised": true,
+    "console_errors": 0,
+    "page_errors": 0,
+    "evidence": [
+      "evidence/browser/main_initial/live_browser_report.json",
+      "evidence/browser/main_fresh/live_browser_report.json",
+      "evidence/browser/main_fresh/supplemental_sliders/report.json",
+      "evidence/browser_export_comparison.json",
+      "evidence/browser/replacement_final/live_browser_report.json",
+      "evidence/browser/replacement_final/supplemental_sliders/report.json",
+      "evidence/browser/replacement_final/script_demo_E0011215/report.json"
+    ],
+    "replacement_checks": 21,
+    "replacement_supplemental_slider_checks": 5,
+    "scripted_demo_check_count": 6
+  },
+  "real_rdkit_depiction_visual_review": {
+    "status": "PASSED",
+    "reviewer": "Codex visual inspection of actual captured drawings and layouts",
+    "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+    "molecule_id": "E-0018881",
+    "specified_atom_centers": 3,
+    "observations": "Real labeled ring/bond graph and explicit H wedge cues; readable desktop cards/IDs/statuses; 390px controls fit and evidence table scrolls horizontally",
+    "evidence": [
+      "evidence/browser/main_fresh/rdkit_stereo_E-0018881_enlarged.png",
+      "evidence/browser/main_fresh/live_desktop_board.png",
+      "evidence/browser/main_fresh/live_mobile_board_viewport.png",
+      "evidence/browser/main_fresh/visual_qa.json"
+    ]
+  },
+  "fresh_molab_run": {
+    "status": "PASSED",
+    "pid_before": 152,
+    "pid_after": 1726,
+    "source_hash_unchanged": true,
+    "all_21_cells_executed": true,
+    "exception_outputs": 0,
+    "evidence": [
+      "evidence/replacement_final/kernel-validation.json",
+      "evidence/replacement-fresh-api-help.txt",
+      "evidence/browser/replacement_final/live_browser_report.json",
+      "evidence/final-runtime-state.json"
+    ],
+    "previous_fresh_kernel_evidence": "evidence/fresh/kernel-validation.json"
+  },
+  "real_demo_molecule_ids": {
+    "status": "VERIFIED_FULL_DATA_AND_CHEMISTRY",
+    "ids": [
+      "E-0018881",
+      "E-0011215",
+      "E-0001829",
+      "E-0011211",
+      "E-0002337"
+    ],
+    "evidence": [
+      "verified_findings.json",
+      "evidence/browser/main_initial/live_browser_report.json",
+      "evidence/browser/main_fresh/live_browser_report.json",
+      "evidence/browser/replacement_final/script_demo_E0011215/report.json"
+    ],
+    "chemistry_and_decision_verification": "PASSED_FOR_ALL_FIVE_IDS",
+    "browser_interaction_ids": [
+      "E-0018881",
+      "E-0011215",
+      "E-0001829",
+      "E-0011211",
+      "E-0002337"
+    ],
+    "representative_stereochemical_depiction": {
+      "status": "PASSED",
+      "id": "E-0018881",
+      "evidence": "evidence/visual_review.json"
+    }
+  },
+  "earlier_windows_blocker": {
+    "status": "RESOLVED_FOR_FINALIZATION_BY_COMPATIBLE_LINUX_RUNTIME",
+    "security_policy_changed": false,
+    "note": "Windows native RDKit import remains blocked on that host; full validation now succeeds in the actual authorized molab runtime"
+  },
+  "runtime_repairs": {
+    "imported_empty_cell_removed_through_live_cell_manager": true,
+    "helper_paths_adapted_to_actual_notebook_filename": true,
+    "original_executable_cell_ast_preserved": true
+  },
+  "remaining_science_blockers": [],
+  "video_recording": "NOT_RECORDED",
+  "sharing_settings_changed": false,
+  "notebook_publication_by_agent": "NOT_PERFORMED",
+  "competition_submission": "NOT_SUBMITTED",
+  "organizer_contact": "NOT_PERFORMED",
+  "host_editor_limitation": {
+    "status": "WORKED_AROUND_WITH_SUPPORTED_PRESENT_VIEW",
+    "viewer_validation": "PASSED",
+    "detail": "Edit-mode writer startup reproduced 22 LSP initialize timeouts and an inline-AI Escape RangeError. Direct ?view-as=present mounts no CodeMirror editors; menu dismissal uses a normal outside click. Strict console/page error checks pass. No platform config or sharing changes were made.",
+    "evidence": "evidence/browser/editor_limitations",
+    "cold_startup_observation": "A browser opened before notebook initialization collected CellNotInitializedError and LSP errors. The notebook was fully executed, then a new settled presentation browser passed strict unfiltered console/page checks.",
+    "cold_startup_evidence": "evidence/browser/editor_limitations/replacement_cold_startup.json"
+  },
+  "remaining_validation_blockers": [],
+  "submission_ready_scope": "Notebook technical validation complete; human review, video recording, publication and competition submission remain user actions.",
+  "validated_notebook_url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+  "molab_availability": {
+    "status": "ACTIVE_REPLACEMENT_SESSION_VALIDATED",
+    "checked_at_utc": "2026-10-04T20:52:50.424646+00:00",
+    "url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+    "previous_session_status": "HTTP_410_SANDBOX_TERMINATED_AFTER_VALIDATION",
+    "previous_session_evidence": "evidence/molab_availability.json",
+    "final_report_sync": "PASSED_READBACK_VERIFIED",
+    "sync_evidence": "evidence/remote_report_sync.json"
+  },
+  "remaining_handoff_blockers": []
+}

@@ -1,0 +1,124 @@
+rdkit_import: PASSED
+semantic_tests: PASSED
+full_chemistry_and_data: PASSED
+marimo_strict_check: PASSED
+dependency_consistency: PASSED
+html_export: PASSED
+session_export: PASSED
+freeze_successful_environment: PASSED
+{
+  "status": "SCIENCE_CHEMISTRY_AND_MARIMO_PASSED_BROWSER_AND_FRESH_SESSION_PENDING",
+  "valid_ids": 7618,
+  "default_gates": {
+    "interval": {
+      "n": 7618,
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226,
+      "lower": 1844,
+      "upper": 5070,
+      "complete_decisions": 4392
+    },
+    "discard_censored": {
+      "n": 7618,
+      "pass": 1682,
+      "fail": 2448,
+      "unresolved": 3488,
+      "lower": 1682,
+      "upper": 5170,
+      "complete_decisions": 4130
+    },
+    "changed_decisions": 262,
+    "examples": [
+      {
+        "id": "E-0010691",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011215",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011248",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011263",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011268",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011272",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011273",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      },
+      {
+        "id": "E-0011287",
+        "using_bounds": "fail",
+        "discarding_bounds": "unresolved"
+      }
+    ],
+    "additional_certified_passes": 162,
+    "additional_certified_failures": 100,
+    "assay_opportunity": [
+      {
+        "endpoint": "papp",
+        "single_blocker": 1092,
+        "any_blocker": 2815
+      },
+      {
+        "endpoint": "hlm",
+        "single_blocker": 392,
+        "any_blocker": 2070
+      },
+      {
+        "endpoint": "ksol",
+        "single_blocker": 7,
+        "any_blocker": 115
+      }
+    ],
+    "first_failure_forward": [
+      {
+        "endpoint": "ksol",
+        "first_fail": 1329
+      },
+      {
+        "endpoint": "hlm",
+        "first_fail": 706
+      },
+      {
+        "endpoint": "papp",
+        "first_fail": 513
+      }
+    ],
+    "first_failure_reversed": [
+      {
+        "endpoint": "papp",
+        "first_fail": 654
+      },
+      {
+        "endpoint": "hlm",
+        "first_fail": 1016
+      },
+      {
+        "endpoint": "ksol",
+        "first_fail": 878
+      }
+    ]
+  },
+  "next": "Run the complete notebook in a live browser and then in a fresh Python-backed molab session. Inspect chemical drawings and update the video."
+}
+

@@ -1,0 +1,31 @@
+{
+  "persistent_molab_url": "https://molab.marimo.io/github/01Harsh-Pandey/missing-molecules/blob/main/missing_molecules.py",
+  "github_url": "https://github.com/01Harsh-Pandey/missing-molecules",
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "github_source_match": "PENDING_REMOTE_HASH_CHECK",
+  "persistent_link_fresh_python_session": "PENDING_CLOUD_RUN",
+  "competition_submitted": false,
+  "updated_at_utc": "2026-10-04T22:03:05.688838+00:00",
+  "publication_status": "UPLOADING",
+  "github_api_authentication": "PASSED",
+  "github_account": "01Harsh-Pandey",
+  "github_repository_creation": {
+    "status": "PASSED",
+    "public": true,
+    "default_branch": "main"
+  },
+  "local_packaged_source_matches_validated_notebook": true,
+  "static_preview_session_filename": "__marimo__/session/missing_molecules.py.json",
+  "static_preview_filename_matches_notebook": true,
+  "credentials_in_package": false,
+  "local_publication_checks": {
+    "notebook_matches_validated_file": true,
+    "requirements_match_validated_files": true,
+    "findings_match_validated_file": true,
+    "session_snapshot_byte_match": true,
+    "snapshot_cells": 21,
+    "snapshot_exception_outputs": 0,
+    "readme_includes_question_finding_attribution_ai_disclosure_run_instructions_and_badge": true
+  },
+  "commit_sha": null
+}

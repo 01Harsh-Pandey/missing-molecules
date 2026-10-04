@@ -1,0 +1,90 @@
+{
+  "review_status": "PASSED_SCIENCE_AND_LIVE_MODEL_COMPARISON",
+  "source": {
+    "url": "https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-data/resolve/6b898ccc43d10d25b230fb09e22a6e30c30022b5/expansion_data_raw.csv",
+    "revision": "6b898ccc43d10d25b230fb09e22a6e30c30022b5",
+    "md5": "27fae3d509fb1d9fd97cc94a4c9cccec",
+    "sha256": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c",
+    "bytes": 686791
+  },
+  "source_metadata_reference": "https://zenodo.org/records/21504733",
+  "source_attribution": "Expansion Therapeutics and the OpenADMET Consortium; CC BY 4.0",
+  "reviewed_notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "reviewed_scientific_engine_sha256": "7586e1b404fae8b4120a17bd3f664d5f394071da20b0e2b8fe70cb4e56b65939",
+  "verified_findings_sha256": "68b8d712dcdaeb597340cf3dcc525264b0c8187a7ca15c4bdcf6198dcd51e939",
+  "live_model_evidence_sha256": "b55a21e7f11b5c062d248229cbf1d4d914544f814651be816e312748d91da165",
+  "independent_numeric_implementation": "Separate Decimal parser/classifier and AND-gate evaluator; no notebook parsing/classification functions used for the reference decisions",
+  "source_checksum": "independently recomputed MD5 and SHA-256",
+  "embedded_source_matches_raw_file": true,
+  "raw_unique_ids": 7618,
+  "valid_structure_ids": 7618,
+  "raw_counts_survive_full_chemistry_audit": true,
+  "default_gate_counts": {
+    "interval": {
+      "n": 7618,
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226,
+      "lower": 1844,
+      "upper": 5070,
+      "complete_decisions": 4392
+    },
+    "discard_censored": {
+      "n": 7618,
+      "pass": 1682,
+      "fail": 2448,
+      "unresolved": 3488,
+      "lower": 1682,
+      "upper": 5170,
+      "complete_decisions": 4130
+    }
+  },
+  "extra_settled_valid_id_decisions": 262,
+  "all_live_exported_per_id_decisions_compared": 7618,
+  "all_live_exported_per_id_gates_compared": 22854,
+  "live_per_id_and_gate_agreement": true,
+  "endpoint_subsets_independently_recomputed": 15,
+  "sensitivity_settings_independently_recomputed": 31,
+  "live_source_and_chemistry_comparison": {
+    "invalid_ids": [],
+    "multi_fragment_ids": [],
+    "distinct_isomeric_structures": 7617,
+    "repeated_structure_id_groups": [
+      [
+        "E-0001829",
+        "E-0014119"
+      ]
+    ],
+    "source_audit": "exact equality",
+    "first_failure_and_assay_opportunity": "exact independent agreement"
+  },
+  "stereochemistry_evidence": {
+    "source": "Full RDKit audit in the connected Linux molab runtime; not independently rerun on Windows",
+    "ids_with_specified_atom_stereochemistry": 2054,
+    "ids_with_specified_bond_stereochemistry": 9,
+    "ids_with_unassigned_potential_atom_stereocenters": 232,
+    "demo_assigned_atom_centers": {
+      "censor_bound_certifies_pass": 3,
+      "censor_bound_certifies_failure": 1,
+      "unresolved_under_defaults": 1,
+      "fails_multiple_default_gates": 1,
+      "same_observation_threshold_transition": 2
+    },
+    "live_separate_stereo_counters": "NOT_PRESENT_IN_BASELINE_EXPORT",
+    "visual_depiction_review": "PASSED; evidence/visual_review.json"
+  },
+  "browser_validation": "PASSED",
+  "fresh_molab_validation": "PASSED",
+  "submission_ready": true,
+  "failures": [],
+  "scope_note": "Science/model comparison only. This does not certify browser synchronization, depiction quality, strict static/export completion, or a fresh molab session. Later source edits need matching engine hash or repeat review.",
+  "initial_full_findings_sha256": "bc90669e4e3a9f6a6006b4a71d33233e9400f1dcce45ce31d6a889a315411e12",
+  "final_validation_note": "Independent numeric results preserved. Browser, visual, and fresh-kernel statuses are supplemented by the separate executed tests in VALIDATION_STATUS.json.",
+  "previous_final_findings_sha256": "5d5e78cd020ac3fe33fcdded2f3177a95757c431db8cd669d6551950c06fbf06",
+  "replacement_evidence": {
+    "kernel": "evidence/replacement_final/kernel-validation.json",
+    "browser": "evidence/browser/replacement_final/live_browser_report.json",
+    "comparison": "evidence/browser_export_comparison.json",
+    "note": "Unchanged source/scientific engine; every new downloaded per-ID result is compared with the previously independently verified engine."
+  }
+}

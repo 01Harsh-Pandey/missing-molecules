@@ -1,0 +1,17 @@
+{
+  "huggingface": {
+    "url": "https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-data/resolve/6b898ccc43d10d25b230fb09e22a6e30c30022b5/expansion_data_raw.csv",
+    "resolved_url": "https://huggingface.co/api/resolve-cache/datasets/openadmet/openadmet-expansionrx-challenge-data/6b898ccc43d10d25b230fb09e22a6e30c30022b5/expansion_data_raw.csv?%2Fdatasets%2Fopenadmet%2Fopenadmet-expansionrx-challenge-data%2Fresolve%2F6b898ccc43d10d25b230fb09e22a6e30c30022b5%2Fexpansion_data_raw.csv=&etag=%22112a951e8774614ff6a6fc7486b430648b973a35%22",
+    "bytes": 686791,
+    "md5": "27fae3d509fb1d9fd97cc94a4c9cccec",
+    "sha256": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c"
+  },
+  "zenodo": {
+    "url": "https://zenodo.org/records/21504733/files/expansion_data_raw.csv?download=1",
+    "resolved_url": "https://zenodo.org/records/21504733/files/expansion_data_raw.csv?download=1",
+    "bytes": 686791,
+    "md5": "27fae3d509fb1d9fd97cc94a4c9cccec",
+    "sha256": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c"
+  },
+  "identical_bytes": true
+}

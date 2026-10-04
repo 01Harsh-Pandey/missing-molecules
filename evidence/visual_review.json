@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "reviewer": "Codex visual inspection of actual captured drawings and layouts",
+  "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "molecule_id": "E-0018881",
+  "specified_atom_centers": 3,
+  "observations": "Real labeled ring/bond graph and explicit H wedge cues; readable desktop cards/IDs/statuses; 390px controls fit and evidence table scrolls horizontally",
+  "evidence": [
+    "evidence/browser/main_fresh/rdkit_stereo_E-0018881_enlarged.png",
+    "evidence/browser/main_fresh/live_desktop_board.png",
+    "evidence/browser/main_fresh/live_mobile_board_viewport.png",
+    "evidence/browser/main_fresh/visual_qa.json"
+  ],
+  "replacement_viewer_url": "https://sb-292adb2b15a38c98.sb.molab.run/?view-as=present",
+  "replacement_actual_images_reviewed": [
+    "evidence/browser/replacement_final/live_desktop_board.png",
+    "evidence/browser/replacement_final/live_mobile_controls.png",
+    "evidence/browser/replacement_final/live_mobile_board_viewport.png",
+    "evidence/browser/replacement_final/rdkit_stereo_E-0018881_enlarged.png"
+  ],
+  "replacement_observations": "Actual labeled molecular graph with explicit H wedge cues; readable 12-card desktop board; all 390px threshold controls fit, and mobile cards/metrics remain readable. Native molab floating controls remain visible at the bottom."
+}

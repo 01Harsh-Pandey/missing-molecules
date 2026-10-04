@@ -1,0 +1,7 @@
+COMMAND: ["/tmp/uv-venv/bin/python", "-m", "marimo", "export", "session", "notebook.py", "--no-sandbox", "--force-overwrite"]
+EXIT CODE: 0
+STDOUT:
+Running notebook.py...
+ok: /marimo/__marimo__/session/notebook.py.json
+
+STDERR:

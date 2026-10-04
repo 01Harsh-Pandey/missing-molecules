@@ -1,0 +1,15 @@
+{
+  "status": "VISUALLY_INSPECTED",
+  "scope": "final_notebook",
+  "captured_at": "2026-10-04T20:46:41.315Z",
+  "note": "Actual replacement pinned-kernel desktop/mobile captures inspected. Real RDKit structures and explicit H stereochemical wedge cues render, no chemistry-disabled placeholders appear, and molecule card IDs/status badges remain legible at 390px. Native controls fit and detail table horizontal scrolling was verified. Molab native select/edit controls appear at bottom of long mobile capture.",
+  "evidence": [
+    "live_desktop.png",
+    "live_desktop_board.png",
+    "live_mobile_controls.png",
+    "live_mobile_board_viewport.png",
+    "live_mobile_board.png",
+    "live_mobile_details.png",
+    "rdkit_stereo_E-0018881_enlarged.png"
+  ]
+}
