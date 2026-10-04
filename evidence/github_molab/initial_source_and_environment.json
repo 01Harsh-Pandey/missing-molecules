@@ -1,0 +1,152 @@
+{
+  "molab_origin": "https://sb-bdb403412e5523ad.sb.molab.run",
+  "persistent_link": "https://molab.marimo.io/github/01Harsh-Pandey/missing-molecules/blob/main/missing_molecules.py",
+  "source_commit": "8b113056c6c807d6e9cd2dfb8f6fddc1e7a1e8fd",
+  "pid": 166,
+  "python": "3.13.11 (main, Feb  3 2026, 03:08:54) [GCC 14.2.0]",
+  "executable": "/tmp/uv-venv/bin/python",
+  "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.41",
+  "live_source_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "published_source_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "source_byte_match": true,
+  "live_header": [
+    "# /// script",
+    "# requires-python = \">=3.13\"",
+    "# dependencies = [",
+    "#     \"anywidget==0.9.18\",",
+    "#     \"jedi<0.20\",",
+    "#     \"marimo==0.25.1\",",
+    "#     \"numpy<2.5\",",
+    "#     \"rdkit==2026.3.6\",",
+    "#     \"traitlets==5.14.3\",",
+    "#     \"websockets<17\",",
+    "# ]",
+    "# ///",
+    "",
+    "import marimo",
+    "",
+    "__generated_with = \"0.25.1\"",
+    "app = marimo.App(width=\"medium\", auto_download=[\"html\"])",
+    ""
+  ],
+  "cells": [
+    {
+      "id": "Hbol",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "MJUe",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "vblA",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "bkHC",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "lEQa",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "PKri",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "Xref",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "SFPL",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "BYtC",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "RGSE",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "Kclp",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "emfo",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "Hstk",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "nWHF",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "iLit",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "ZHCJ",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "ROlb",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "qnkX",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "TqIu",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "Vxnm",
+      "status": "stale",
+      "errors": []
+    },
+    {
+      "id": "DnEU",
+      "status": "stale",
+      "errors": []
+    }
+  ],
+  "public_globals": [
+    "input",
+    "spec_from_loader"
+  ],
+  "packages": {
+    "marimo": "0.25.1",
+    "rdkit": "2026.3.6",
+    "anywidget": "0.11.0",
+    "traitlets": "5.15.1",
+    "numpy": "2.4.6",
+    "websockets": "16.1.1",
+    "jedi": "0.19.2"
+  }
+}

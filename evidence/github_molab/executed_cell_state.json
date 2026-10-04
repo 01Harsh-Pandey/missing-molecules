@@ -1,0 +1,186 @@
+{
+  "cells": [
+    {
+      "id": "Hbol",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "MJUe",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "vblA",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "bkHC",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "lEQa",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "PKri",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "Xref",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "SFPL",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "BYtC",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "RGSE",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "Kclp",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "emfo",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "Hstk",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "nWHF",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "iLit",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "ZHCJ",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "ROlb",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "qnkX",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "TqIu",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "Vxnm",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "DnEU",
+      "status": "idle",
+      "errors": []
+    }
+  ],
+  "public_globals": [
+    "Chem",
+    "Counter",
+    "DATA_URL",
+    "ENDPOINTS",
+    "EvidenceBoard",
+    "MISSING_TOKENS",
+    "REVISION",
+    "SOURCE_MD5",
+    "anywidget",
+    "apply_domain",
+    "assay_priority",
+    "attribution",
+    "board",
+    "board_data_ready",
+    "canonical_groups",
+    "chemistry_audit",
+    "classify_measurement",
+    "csv",
+    "decision_export",
+    "display_limit",
+    "draw_structure",
+    "efflux_control",
+    "embedded_raw_b64",
+    "enabled",
+    "enabled_control",
+    "evaluate_records",
+    "evidence_summary",
+    "exact_only_results",
+    "exact_summary",
+    "first_failure_attribution",
+    "focus_endpoint",
+    "functools",
+    "gate_order",
+    "hashlib",
+    "hide_censored_control",
+    "hlm_control",
+    "html",
+    "input",
+    "interval_results",
+    "interval_summary",
+    "invalid_structure_ids",
+    "io",
+    "json",
+    "ksol_control",
+    "load_source_bytes",
+    "math",
+    "mo",
+    "molecule_cache",
+    "normalize_header",
+    "os",
+    "papp_control",
+    "parse_measurement",
+    "pathlib",
+    "priorities",
+    "raw_data",
+    "rdMolDraw2D",
+    "re",
+    "record_by_id",
+    "records",
+    "records_from_csv",
+    "results",
+    "salt_ids",
+    "search_control",
+    "selected_id",
+    "source_audit",
+    "source_origin",
+    "source_records",
+    "source_schema",
+    "spec_from_loader",
+    "status_filter",
+    "stringify_interval",
+    "summarize",
+    "thresholds",
+    "traitlets",
+    "urllib"
+  ]
+}

@@ -3,10 +3,10 @@
   "github_url": "https://github.com/01Harsh-Pandey/missing-molecules",
   "notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
   "github_source_match": "PASSED",
-  "persistent_link_fresh_python_session": "PENDING_BROWSER_CONTROL_TIMEOUT",
+  "persistent_link_fresh_python_session": "PASSED_NATIVE_KERNEL_MANUAL_UI_CONFIRMATION_REMAINING",
   "competition_submitted": false,
   "updated_at_utc": "2026-10-04T22:18:53.851590+00:00",
-  "publication_status": "PUBLISHED_MOLAB_LIVE_CHECK_PENDING_BROWSER_CONTROL",
+  "publication_status": "PUBLISHED_FRESH_CLOUD_EXECUTION_PASSED",
   "github_api_authentication": "PASSED",
   "github_account": "01Harsh-Pandey",
   "github_repository_creation": {
@@ -107,7 +107,32 @@
     "blob_sha": "65a933f0f2df8c93a70a03ccad09be8a5b272371"
   },
   "molab_browser_check": {
-    "status": "PENDING",
-    "reason": "Browser-control calls timed out while opening view-mode selection and could not recover. The persistent page itself opened and displayed the correct notebook, View on GitHub link, Preview mode, and Run it now button."
-  }
+    "status": "MANUAL_CONFIRMATION_BY_USER",
+    "reason": "The user requested that any remaining checks be performed manually. Automated browser/setup retries have stopped. The persistent molab page opened successfully, and the newly supplied molab runtime executed all 21 cells with zero errors. Drawings and live widget interactions separately passed in a fresh Linux Python server in GitHub Actions."
+  },
+  "fresh_molab_kernel": {
+    "status": "PASSED",
+    "origin": "https://sb-bdb403412e5523ad.sb.molab.run/",
+    "source_byte_match": true,
+    "source_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+    "pid": 166,
+    "python": "3.13.11",
+    "executable": "/tmp/uv-venv/bin/python",
+    "cells": 21,
+    "cell_statuses": ["idle"],
+    "cell_errors": 0,
+    "rdkit_loaded_version": "2026.03.6",
+    "anywidget_loaded_version": "0.11.0",
+    "traitlets_loaded_version": "5.15.1",
+    "dependency_note": "The molab host supplied newer anywidget and traitlets than the inline pins. The notebook executed successfully there. A separate clean Linux run validated the declared exact dependency versions and live browser widgets.",
+    "evidence": ["evidence/github_molab/initial_source_and_environment.json", "evidence/github_molab/executed_cell_state.json", "evidence/github_molab/run_all.log"]
+  },
+  "fresh_linux_browser_widgets": {
+    "status": "PASSED",
+    "source_commit_sha": "8b113056c6c807d6e9cd2dfb8f6fddc1e7a1e8fd",
+    "workflow_run_url": "https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37239622005",
+    "job_id": 111545509204,
+    "checks": "Existing complete browser integration suite passed against a newly started native Python application, including molecule drawings and Python widget interactions."
+  },
+  "manual_finish": "Open the persistent molab link, select Server, click Run all if cells have not executed, and confirm drawings and controls render and respond."
 }

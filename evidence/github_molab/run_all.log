@@ -1,0 +1,28 @@
+[I 261004 22:24:45 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 22:24:45 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 22:24:45 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 22:24:45 pypi_package_manager:672] Listing packages with 'uv pip list'
+[I 261004 22:24:45 pypi_package_manager:529] Updating script metadata for /marimo/notebook.py
+[I 261004 22:24:45 pypi_package_manager:672] Listing packages with 'uv pip list'
+re-ran cell 'nWHF' (_)
+re-ran cell 'ZHCJ' (_)
+re-ran cell 'qnkX' (_)
+re-ran cell 'BYtC' (_)
+re-ran cell 'Vxnm' (_)
+re-ran cell 'TqIu' (_)
+re-ran cell 'bkHC' (_)
+re-ran cell 'Hstk' (_)
+re-ran cell 'DnEU' (_)
+re-ran cell 'vblA' (_)
+re-ran cell 'Xref' (_)
+re-ran cell 'PKri' (_)
+re-ran cell 'MJUe' (_)
+re-ran cell 'iLit' (_)
+re-ran cell 'SFPL' (_)
+re-ran cell 'Kclp' (_)
+re-ran cell 'ROlb' (_)
+re-ran cell 'Hbol' (_)
+re-ran cell 'emfo' (_)
+re-ran cell 'lEQa' (_)
+re-ran cell 'RGSE' (_)
+Queued all 21 published notebook cells for a fresh native Python execution.
