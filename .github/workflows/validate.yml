@@ -1,0 +1,40 @@
+name: Fresh Linux notebook validation
+
+on:
+  push:
+    paths:
+      - missing_molecules.py
+      - requirements*.txt
+      - '*science.py'
+      - validate_full.py
+      - verify_cloud.py
+      - independent_full_review.py
+      - .github/workflows/validate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install notebook dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate RDKit, science, dependencies, and complete notebook execution
+        run: python verify_cloud.py
+      - name: Save fresh validation evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: fresh-linux-validation
+          path: |
+            CLOUD_EXECUTION_REPORT.json
+            verified_findings.json
+            evidence/cloud/
+          retention-days: 7
