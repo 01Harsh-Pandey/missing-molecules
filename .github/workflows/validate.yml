@@ -9,6 +9,10 @@ on:
       - validate_full.py
       - verify_cloud.py
       - independent_full_review.py
+      - compare_browser_exports.py
+      - test_live_browser.cjs
+      - data/**
+      - __marimo__/session/missing_molecules.py.json
       - .github/workflows/validate.yml
   workflow_dispatch:
 
@@ -26,8 +30,39 @@ jobs:
           python-version: '3.13'
       - name: Install notebook dependencies
         run: python -m pip install -r requirements.txt
+      - name: Check the published preview matches the notebook
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          from marimo._ast.load import load_app
+
+          notebook = Path("missing_molecules.py")
+          app = load_app(notebook)
+          assert app is not None, "Published notebook could not be loaded"
+          codes = list(app._cell_manager.codes())
+          expected = [hashlib.md5(code.encode("utf-8"), usedforsecurity=False).hexdigest() for code in codes]
+          snapshot = json.loads(Path("__marimo__/session/missing_molecules.py.json").read_text())
+          actual = [cell["code_hash"] for cell in snapshot["cells"]]
+          assert actual == expected, "Committed static preview does not match the source cells"
+          assert snapshot["metadata"]["marimo_version"] == "0.25.1"
+          assert not any(output.get("type") == "error" for cell in snapshot["cells"] for output in cell.get("outputs", []))
+          assert codes[0] == "import marimo as mo"
+          assert not any(output.get("data", {}).get("text/html") for output in snapshot["cells"][0].get("outputs", [])), "The import cell contains a stray HTML output"
+          print(f"Published preview: {len(codes)} matching cells, no exception or stray import outputs")
+          PY
       - name: Validate RDKit, science, dependencies, and complete notebook execution
         run: python verify_cloud.py
+      - name: Independently compare all endpoint and threshold decisions
+        run: python independent_full_review.py
+      - name: Record the freshly generated session snapshot
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          print("FRESH_SESSION_JSON_START")
+          print(Path("__marimo__/session/missing_molecules.py.json").read_text())
+          print("FRESH_SESSION_JSON_END")
+          PY
       - name: Install browser test runtime
         run: |
           npm install --no-save playwright@1.58.2
@@ -60,6 +95,8 @@ jobs:
           path: |
             CLOUD_EXECUTION_REPORT.json
             verified_findings.json
+            INDEPENDENT_REVIEW.json
+            __marimo__/session/missing_molecules.py.json
             evidence/cloud/
             evidence/github_fresh_browser/live_browser_report.json
             evidence/github_fresh_browser/*.png
