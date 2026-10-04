@@ -1,6 +1,10 @@
 # Missing Molecules — 4:05 script with full-data findings
 
-**Notebook science, chemistry, execution, browser and actual fresh-session validation passed; recording still pending.** This script now uses the full-mode findings from the Linux Python-backed molab runtime, not the earlier source-only results. RDKit accepted **all 7,618 published IDs as valid, nonempty structures**. Browser synchronization and the actual restarted molab session have passed. Use the validated replacement presentation link in EXECUTION_REPORT.md. Its fresh pinned kernel and live browser checks passed. The original sandbox termination and host editor limitation are documented there. No video has been recorded and no competition submission has been made.
+**Recording still pending.** The scientific results below are validated with RDKit, complete execution, and live browser checks in native Python. RDKit accepted **all 7,618 published IDs as valid, nonempty structures**.
+
+**Use the persistent notebook for recording and submission:** https://molab.marimo.io/github/01Harsh-Pandey/missing-molecules/blob/main/missing_molecules.py. Select **Server**, run all cells if needed, and confirm that drawings and controls work before recording. The fresh GitHub-backed molab kernel executed all 21 cells without errors; its hosted browser UI still needs confirmation. Earlier replacement-runtime browser/restart checks are historical evidence, not a guarantee that a temporary sandbox URL will remain available.
+
+No video has been recorded and no competition submission has been made.
 
 Target duration: **4:05**, with a 3:50–4:20 rehearsal range and at least 40 seconds under the five-minute maximum. Leave time for reactive updates. These timestamps are pacing targets, not a measured recording duration.
 
@@ -24,7 +28,7 @@ The 7,618 IDs represent **7,617 distinct canonical isomeric structures**. The du
 1. Confirm the final notebook and latest full findings match this denominator, counts, thresholds, and demo IDs. Preserve published structures, units, and inequalities. Retain the duplicate-group disclosure and the three physically inconsistent assay-limit cells as unresolved evidence; valid structure does not imply valid measurement.
 2. The final main notebook passed its strict static check, complete HTML/session execution, dependency check, and inspection of all 21 cells with zero exception outputs. The successful Linux dependency lock and execution evidence are included in the final reports.
 3. Actual Python↔anywidget browser checks passed for threshold changes, endpoint enable/disable, zero endpoints, censor discard, molecule-ID search, no matching cards, molecule selection, endpoint focus, gate order, and JSON download. Downloaded per-ID decisions and tables agree with the scientific engine. Real RDKit stereochemical drawings, desktop and 390px layouts, table scrolling, and console/cell errors were checked.
-4. An actual replacement molab runtime restart (PID 152 → 1726), all-cell execution, full verifier rerun, and fresh browser checks passed. Dependency resolution, structures, reactive controls, and JSON exports were rechecked. The final reports record the unchanged source hash, restart action, and results. Publication and sharing changes remain user actions.
+4. An actual replacement molab runtime restart (PID 152 → 1726), all-cell execution, full verifier rerun, and fresh browser checks passed. Dependency resolution, structures, reactive controls, and JSON exports were rechecked. The final reports record the unchanged source hash, restart action, and results. The GitHub-backed notebook is now published. Use its persistent link above, and confirm its hosted browser controls before recording.
 5. Reproduce the timed path below, rehearse, and time the recording. Harsh must review the displayed evidence and narration before recording/submission. Do not claim domain-expert review or completed human review unless it actually occurs. If final repairs change the scientific outputs, revise this script against the new full findings before recording.
 
 ## Timed screen path and narration

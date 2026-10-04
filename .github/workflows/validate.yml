@@ -55,13 +55,20 @@ jobs:
         run: python verify_cloud.py
       - name: Independently compare all endpoint and threshold decisions
         run: python independent_full_review.py
-      - name: Record the freshly generated session snapshot
+      - name: Verify the freshly exported snapshot
         run: |
           python - <<'PY'
+          import hashlib, json
           from pathlib import Path
-          print("FRESH_SESSION_JSON_START")
-          print(Path("__marimo__/session/missing_molecules.py.json").read_text())
-          print("FRESH_SESSION_JSON_END")
+          snapshot = json.loads(Path("__marimo__/session/missing_molecules.py.json").read_text())
+          errors = [output for cell in snapshot["cells"] for output in cell.get("outputs", []) if output.get("type") == "error"]
+          assert len(snapshot["cells"]) == 21 and not errors
+          assert not any(output.get("data", {}).get("text/html") for output in snapshot["cells"][0].get("outputs", []))
+          print(json.dumps({
+              "cells": len(snapshot["cells"]), "exception_outputs": len(errors),
+              "import_cell_has_stray_html": False,
+              "notebook_sha256": hashlib.sha256(Path("missing_molecules.py").read_bytes()).hexdigest()
+          }))
           PY
       - name: Install browser test runtime
         run: |
