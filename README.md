@@ -37,9 +37,9 @@ The notebook declares its dependencies. The matching `__marimo__/session/missing
 
 ## Validation
 
-[Fresh Linux validation passed](https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37239622005): 37 scientific tests, RDKit chemistry, complete execution of 21 cells, and 21 browser checks covering structures, live Python widget interactions, and the mobile layout. The workflow also checks source/preview consistency and independently recomputes the recorded endpoint and threshold decisions.
+[Fresh Linux validation passed](https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37241656758): 37 scientific tests, RDKit chemistry, complete execution of 21 cells, and 21 browser checks covering structures, live Python widget interactions, and the mobile layout. The workflow also checks source/preview consistency and independently recomputes the recorded endpoint and threshold decisions.
 
-A fresh molab kernel executed all 21 cells without errors. Its hosted browser rendering and controls still require confirmation; see [publication details](FINAL_PUBLICATION_REPORT.md).
+A fresh molab kernel executed all 21 cells without errors. Its hosted browser rendering and controls still require confirmation; see [publication details](FINAL_PUBLICATION_REPORT.md) and the [latest review](REVIEW_REPORT.md).
 
 Validated notebook SHA-256: `de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b`.
 
