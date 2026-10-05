@@ -1,0 +1,47 @@
+name: Build narrated submission video
+on:
+  push:
+    branches: [video/narrated-submission]
+    paths: [narrate_submission.py, narration_segments.json, .github/workflows/narrated-video.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  narrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install speech and media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts numpy faster-whisper
+          python -m py_compile narrate_submission.py
+      - name: Fetch the exact reviewed silent video
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/01Harsh-Pandey/missing-molecules/actions/artifacts/11324072189/zip > silent.zip
+      - name: Generate narration and verify the complete MP4
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: '1'
+        run: python -u narrate_submission.py
+      - name: Upload the narrated MP4 and verification report
+        uses: actions/upload-artifact@v7
+        with:
+          name: Missing-Molecules-Final-Narrated-MP4
+          path: narrated-output/delivery/
+          retention-days: 30
+      - name: Preserve diagnostic audio and chapter frames
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: narrated-video-review
+          path: |
+            narrated-output/audio-*.mp3
+            narrated-output/final-frame-*.jpg
+            narrated-output/stems/
+          retention-days: 7
