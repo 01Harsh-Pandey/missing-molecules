@@ -21,9 +21,10 @@ Retaining bounds settles **262 additional decisions: 162 passes and 100 failures
 
 ## Open and run
 
-1. Open the molab badge.
-2. Select **Server** to start native Python.
-3. Click **Run all** if needed, then wait for the evidence board and drawings.
+1. Open the molab badge and sign in when prompted.
+2. Select **Server**, then confirm **Run on server** to start native Python.
+3. If outputs are incomplete, use **Re-run all cells** in the command palette, then wait for the evidence board and drawings.
+4. Switch to app/presentation view for the walkthrough.
 
 The initial static preview is a saved view. Use the Python server for interactive controls and RDKit; this notebook requires that runtime. The verified raw data is embedded, so no separate data upload is needed.
 
@@ -39,7 +40,7 @@ The notebook declares its dependencies. The matching `__marimo__/session/missing
 
 [Fresh Linux validation passed](https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37241656758): 37 scientific tests, RDKit chemistry, complete execution of 21 cells, and 21 browser checks covering structures, live Python widget interactions, and the mobile layout. The workflow also checks source/preview consistency and independently recomputes the recorded endpoint and threshold decisions.
 
-A fresh molab kernel executed all 21 cells without errors. Its hosted browser rendering and controls still require confirmation; see [publication details](FINAL_PUBLICATION_REPORT.md) and the [latest review](REVIEW_REPORT.md).
+A refreshed hosted molab session passed 20 functional browser checks, including real structures, live Python/widget interactions, exports, and mobile layout. Its overall job failed the final check on editor language-server timeouts; a separate presentation attempt also remained incomplete. See the [competition review and hosted evidence](COMPETITION_REVIEW.md) and [publication details](FINAL_PUBLICATION_REPORT.md).
 
 Validated notebook SHA-256: `de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b`.
 

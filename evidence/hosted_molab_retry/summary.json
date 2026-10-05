@@ -1,0 +1,59 @@
+{
+  "recorded_at": "2026-10-05",
+  "scope": "hosted_molab_browser_retry",
+  "credentials_used": false,
+  "notebook_source_changed": false,
+  "published_notebook_sha256": "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b",
+  "permanent_entry": {
+    "status": 200,
+    "server_requires_sign_in_in_observed_flow": true,
+    "custom_board_rendered_in_static_preview": false,
+    "run_url": "https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37254762524"
+  },
+  "previous_runtime": {
+    "status": 410,
+    "message": "sandbox terminated"
+  },
+  "fresh_runtime": {
+    "status": 200,
+    "cells_observed_before_run": 21,
+    "writer_takeover_http_status": 200,
+    "action": "command palette: Re-run all cells",
+    "baseline": {
+      "pass": 1844,
+      "fail": 2548,
+      "unresolved": 3226
+    },
+    "functional_checks_passed": [
+      "Full chemistry findings match the live baseline and molecule structures render",
+      "Initial widget summary equals downloaded Python result",
+      "Molecule selection reaches Python evidence detail",
+      "Endpoint focus reaches Python evidence detail",
+      "Gate reorder reaches Python attribution and JSON without changing final decisions",
+      "Threshold slider updates Python detail, native comparison table, widget and JSON",
+      "Exact real molecule-ID search updates board and Python detail without changing population",
+      "Censor-discard control updates Python detail, widget, policy comparison and JSON",
+      "No-match search clears Python molecule detail while keeping full-population JSON",
+      "Disabling an endpoint updates Python detail, attribution/opportunity tables and JSON",
+      "Enabling an endpoint updates Python evidence, tables and JSON",
+      "Zero enabled endpoints stops downstream board and export with explicit guidance",
+      "Restoring endpoints recovers default Python result after zero-endpoint stop",
+      "Audited multi-failure molecule keeps its decision while attribution changes",
+      "Audited HLM-only bound changes from pass50 to unresolved5 with unchanged reported inequality",
+      "Status dropdown filters displayed molecules while preserving all-ID Python decisions and export",
+      "Cards shown slider changes the actual board while preserving scientific population and export",
+      "All four endpoints together match full-mode findings in widget, Python tables and JSON",
+      "390px native controls fit and molecule-ID input stays usable",
+      "390px layout fits viewport and evidence table scrolls"
+    ],
+    "overall_status": "FAILED_CONSOLE_CHECK",
+    "failure": "Language server initialization failed: initialize timed out after 30000ms",
+    "run_url": "https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37255081446"
+  },
+  "presentation_attempt": {
+    "status": "FAILED",
+    "reason": "21 editor components mounted after writer bootstrap and presentation navigation; expected 0",
+    "additional_errors": "Host health, data-source and usage requests failed",
+    "run_url": "https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37255391784"
+  }
+}

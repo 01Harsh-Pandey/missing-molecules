@@ -2,7 +2,7 @@
 
 **Recording still pending.** The scientific results below are validated with RDKit, complete execution, and live browser checks in native Python. RDKit accepted **all 7,618 published IDs as valid, nonempty structures**.
 
-**Use the persistent notebook for recording and submission:** https://molab.marimo.io/github/01Harsh-Pandey/missing-molecules/blob/main/missing_molecules.py. Select **Server**, run all cells if needed, and confirm that drawings and controls work before recording. The fresh GitHub-backed molab kernel executed all 21 cells without errors; its hosted browser UI still needs confirmation. Earlier replacement-runtime browser/restart checks are historical evidence, not a guarantee that a temporary sandbox URL will remain available.
+**Use the persistent notebook for recording and submission:** https://molab.marimo.io/github/01Harsh-Pandey/missing-molecules/blob/main/missing_molecules.py. Sign in when prompted, select **Server**, and confirm **Run on server**. If outputs are incomplete, use **Re-run all cells** through the command palette. Confirm that drawings and controls work in the recording browser. A refreshed hosted session passed 20 functional checks; its overall test failed on editor language-server timeouts, and a separate presentation probe was incomplete. See `COMPETITION_REVIEW.md` for the exact scope. Earlier replacement-runtime browser/restart checks are historical evidence, not a guarantee that a temporary sandbox URL will remain available.
 
 No video has been recorded and no competition submission has been made.
 

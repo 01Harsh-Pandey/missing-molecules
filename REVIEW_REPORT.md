@@ -41,7 +41,11 @@ Default gates are KSOL ≥10 µM, HLM CLint ≤50 mL/min/kg, and Caco-2 Papp A�
 
 Retaining bounds establishes **262 additional decisions: 162 passes and 100 failures**. These counts are descriptive evidence decisions under illustrative gates, without imputation or predictive-model training.
 
-## Remaining delivery check
+## Latest hosted retry
+
+The hosted UI was subsequently reached through an isolated GitHub Actions browser. Twenty functional checks passed, but editor language-server timeouts failed the overall job's final console check; a separate presentation attempt failed its editor-mounting check. The permanent link opens and native Server startup prompts for sign in. See [the complete competition review](COMPETITION_REVIEW.md) for exact evidence and recording guidance.
+
+## Earlier delivery-check scope
 
 Prior publication evidence records a new GitHub-backed molab kernel that loaded this identical source, executed all 21 cells without errors, and loaded RDKit. Molab supplied anywidget 0.11.0 and traitlets 5.15.1; the clean Linux job tested the declared exact versions separately.
 

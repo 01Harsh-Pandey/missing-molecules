@@ -10,7 +10,7 @@ The published notebook retains SHA-256 `de5d29f56c04b0bd87238a8a9774ade19a8fcefa
 
 **GitHub-backed molab kernel: previously passed.** The original publication evidence records the identical source executing all 21 cells without errors in a new molab kernel. RDKit loaded as 2026.03.6. The host supplied anywidget 0.11.0 and traitlets 5.15.1; clean Linux validation separately tested the declared pins. See `PUBLICATION_VALIDATION.json` and `evidence/github_molab/` for that evidence.
 
-**Hosted molab browser confirmation remains.** The latest review could not reach the live molab UI because its terminal runtime was unavailable. Open the persistent link, select Server, run all cells if needed, and verify drawings and controls. The GitHub Actions browser result certifies the fresh native Python application, rather than this separate hosted browser session.
+**Hosted molab functional checks: 20 passed; overall job failed.** The refreshed user-provided runtime rendered RDKit structures and passed 20 checks for live controls, exported decisions, and mobile behavior. The final console check failed on editor language-server initialization timeouts. A separate presentation attempt failed because editor components remained mounted and logged host request errors. These results do not establish a clean hosted presentation. The permanent GitHub-backed molab page opens; native Server startup requires sign in in the observed visitor flow. See [the hosted evidence and competition assessment](COMPETITION_REVIEW.md).
 
 [Review and remaining recording steps](REVIEW_REPORT.md).
 
