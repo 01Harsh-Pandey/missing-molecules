@@ -44,6 +44,8 @@ A refreshed hosted molab session passed 20 functional browser checks, including 
 
 Validated notebook SHA-256: `de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b`.
 
+The optional [voice-over guide](VIDEO_SCRIPT.md) links a **4:05 silent walkthrough** and provides nine narration cues. The footage uses the published notebook in native Python; the pack includes the MP4, timing sheet, chapter subtitles, and recording evidence.
+
 ## Attribution and AI use
 
 Notebook by Harsh Pandey. Data: Expansion Therapeutics and the OpenADMET Consortium, [ExpansionRx full release](https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-data), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source measurements and structures are unchanged; decision annotations and the custom EvidenceBoard are additions. Provenance is preserved in the notebook and `data/`.

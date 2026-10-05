@@ -49,8 +49,8 @@ The hosted UI was subsequently reached through an isolated GitHub Actions browse
 
 Prior publication evidence records a new GitHub-backed molab kernel that loaded this identical source, executed all 21 cells without errors, and loaded RDKit. Molab supplied anywidget 0.11.0 and traitlets 5.15.1; the clean Linux job tested the declared exact versions separately.
 
-**This review did not independently interact with the hosted molab browser.** Its terminal could not start because of a workspace runtime provisioning failure, and the web reader could not open the molab pages. The successful browser tests above used a fresh native Python server in GitHub Actions.
+The initial read-only pass did not interact with the hosted molab browser because of workspace provisioning and web-reader limitations. The later isolated hosted retry is described above. The successful 21-check browser validation used a fresh native Python server in GitHub Actions.
 
 Open the persistent link, select **Server**, run all cells if needed, and confirm that molecule drawings appear and controls respond. At the default gates, toggling “discard censored measurements” should change the displayed counts between the two rows above. Restore defaults before recording.
 
-The updated `VIDEO_SCRIPT.md` targets 4:05. Record a video under five minutes and provide a viewable Google Drive link for the competition form. No recording or competition submission was performed by this review.
+After the scientific review, a **4:05, 1920 × 1080 silent walkthrough** was recorded and [validated successfully](https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37258807307). It demonstrates the identical published notebook in native Python, with checked decisions/exports and no page or console errors. Frames from all nine chapters were inspected. [Download the pack](https://github.com/01Harsh-Pandey/missing-molecules/actions/runs/37258807307/artifacts/11324072189) and use the optional [voice-over guide](VIDEO_SCRIPT.md) to add narration. This recording does not resolve molab's editor/presentation limitations. No voice track or competition entry has been submitted.
