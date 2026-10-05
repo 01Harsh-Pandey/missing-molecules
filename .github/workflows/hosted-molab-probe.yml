@@ -1,0 +1,28 @@
+name: Hosted molab browser retry
+on:
+  push:
+    branches: [audit/molab-browser-retry]
+    paths:
+      - .github/workflows/hosted-molab-probe.yml
+      - hosted_molab_probe.cjs
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install browser
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Inspect public molab links without credentials
+        run: node hosted_molab_probe.cjs
+      - name: Upload hosted browser evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: hosted-molab-probe
+          path: hosted-probe-output/
+          retention-days: 7
