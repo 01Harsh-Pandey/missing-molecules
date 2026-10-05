@@ -113,7 +113,7 @@ async def build():
         assert np.sqrt(np.mean(voice_audio**2))>0.006,"Chapter narration missing from final MP4"
     # Transcribe the encoded final audio, rather than checking only the TTS input.
     model=WhisperModel("base.en",device="cpu",compute_type="int8",cpu_threads=4,num_workers=1)
-    asr,info=model.transcribe(str(final),language="en",beam_size=5,vad_filter=True,word_timestamps=True)
+    asr,info=model.transcribe(np.frombuffer(run(["ffmpeg","-v","error","-i",str(final),"-vn","-ar","16000","-ac","1","-f","f32le","pipe:1"]).stdout,dtype="<f4").copy(),language="en",beam_size=5,vad_filter=True,word_timestamps=True)
     transcript=[{"start":s.start,"end":s.end,"text":s.text} for s in asr]
     joined=" ".join(x["text"] for x in transcript)
     print("FINAL_AUDIO_TRANSCRIPT",joined,flush=True)
