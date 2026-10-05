@@ -190,6 +190,25 @@ async function camera(locator) {
   await locator.first().evaluate(el=>el.scrollIntoView({block:'center',behavior:'smooth'}));
   await page.waitForTimeout(650);
 }
+async function cameraSection(title) {
+  const section=page.locator('.mm-section').filter({hasText:title}).first();
+  await section.evaluate(el=>el.scrollIntoView({block:'start',behavior:'smooth'}));
+  await page.waitForTimeout(650);
+  await section.evaluate(el=>{
+    for(let parent=el.parentElement;parent;parent=parent.parentElement){
+      const style=getComputedStyle(parent);
+      if(/auto|scroll/.test(style.overflowY)&&parent.scrollHeight>parent.clientHeight+10){
+        parent.scrollBy({top:-60,behavior:'smooth'});
+        return;
+      }
+    }
+    window.scrollBy({top:-60,behavior:'smooth'});
+  });
+  await page.waitForTimeout(400);
+  const bounds=await section.boundingBox();
+  assert(bounds && bounds.y>=0 && bounds.y<180,
+    'Section heading is not framed near the top: '+title+' '+JSON.stringify(bounds));
+}
 async function chapter(seconds,label) {
   await at(seconds);
   await page.evaluate(label=>document.querySelector('#recording-chapter').textContent=label,label);
@@ -334,7 +353,7 @@ async function run() {
   await summaryEquals({pass:1682,fail:2448,unresolved:3488});
   const discarded=await downloadQuestion('discard_limits');
   assert.equal(discarded.discard_censored,true);
-  await at(144);await camera(page.locator('marimo-table').nth(0));
+  await at(144);await cameraSection('What did cleaning the data erase?');
   await page.screenshot({path:path.join(mediaOut,'policy-comparison.png'),fullPage:false});
   await at(153);await point(censored);await react(()=>censored.uncheck(),'restore bounds');
   await camera(page.locator('.board .metrics'));
@@ -344,9 +363,9 @@ async function run() {
   await setSearch('E-0011211');await camera(page.locator('.mm-details'));
   const before=await downloadQuestion('attribution_before');
   assert.equal(before.molecule_decisions.find(x=>x.id==='E-0011211').status,'fail');
-  await at(175);await camera(page.locator('marimo-table').nth(1));
+  await at(175);await cameraSection('A liability waterfall can tell several stories');
   await at(182);await click(page.getByRole('button',{name:'Move KSOL later',exact:true}),'change first-failure order');
-  await camera(page.locator('marimo-table').nth(1));
+  await cameraSection('A liability waterfall can tell several stories');
   const after=await downloadQuestion('attribution_after');
   assert.deepEqual(after.summary,before.summary);
   assert.notDeepEqual(after.first_failure_attribution,before.first_failure_attribution);
@@ -356,7 +375,7 @@ async function run() {
   await chapter(198,'08 · Save the question and its evidence');
   await setSearch('');
   await click(page.locator('.board .gate .name').filter({hasText:'Papp'}),'focus Papp opportunity');
-  await camera(page.locator('marimo-table').nth(2));
+  await cameraSection('Which measurement could settle a decision?');
   await at(211);await camera(page.getByText('Download this question and its results',{exact:true}));
   await point(page.getByText('Download this question and its results',{exact:true}));
   const final=await downloadQuestion('final_defaults');
