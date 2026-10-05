@@ -42,7 +42,7 @@ evidence={
     "trimmed_start_seconds":start,"mp4_size_bytes":mp4.stat().st_size
 }
 (delivery/"RECORDING_REPORT.json").write_text(json.dumps(evidence,indent=2)+"\n")
-for seconds in [5,62,145,187,233]:
+for seconds in [5,35,62,85,118,148,187,205,233]:
     jpg=delivery/f"frame-{seconds:03d}.jpg"
     subprocess.run(["ffmpeg","-y","-v","error","-ss",str(seconds),"-i",str(mp4),"-frames:v","1","-vf","scale=960:540","-q:v","6",str(jpg)],check=True)
     encoded=base64.b64encode(jpg.read_bytes()).decode("ascii")

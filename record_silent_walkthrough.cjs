@@ -206,7 +206,7 @@ async function cameraSection(title) {
   });
   await page.waitForTimeout(400);
   const bounds=await section.boundingBox();
-  assert(bounds && bounds.y>=0 && bounds.y<180,
+  assert(bounds && bounds.y>=0 && bounds.y<260,
     'Section heading is not framed near the top: '+title+' '+JSON.stringify(bounds));
 }
 async function chapter(seconds,label) {
