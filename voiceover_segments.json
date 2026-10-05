@@ -1,0 +1,56 @@
+[
+  [
+    0,
+    20,
+    "The question",
+    "I'm Harsh Pandey. When an ADMET measurement is missing, or reported only as a bound, can we still decide whether a molecule meets our goals? The Missing Molecules explores that question using real ExpansionRx data."
+  ],
+  [
+    20,
+    45,
+    "The same screening goals",
+    "These are editable teaching goals: solubility at least ten, clearance at most fifty, and permeability at least one, in the displayed units. Every enabled gate must pass. Green establishes a pass, red a failure, and amber remains unresolved. The range is a logical bound, not a confidence interval."
+  ],
+  [
+    45,
+    72,
+    "A bound can establish a pass",
+    "This is E-0018881. Its clearance is reported below four point five, rather than exactly four point five. Every possible nonnegative value below that limit passes our fifty clearance gate. Its solubility and permeability pass too. These observations establish an all-gates pass without filling in a missing value."
+  ],
+  [
+    72,
+    98,
+    "Same observation, different decision",
+    "Now look at E-0002337, with clearance below eight point six. Keep only the clearance gate. It passes at fifty. Tighten the goal to five: some possible values pass and others fail, so the decision becomes unresolved. The measurement stayed the same. Our requirement changed."
+  ],
+  [
+    98,
+    128,
+    "Missing does not mean failing",
+    "E-0011215 has solubility below one point five six. That establishes a failure against our ten-micromolar goal, even though permeability is missing. One established failure is enough. E-0001829 instead has missing solubility and permeability, with acceptable clearance. Its status remains unresolved. Missing does not mean failing."
+  ],
+  [
+    128,
+    163,
+    "262 decisions already in the evidence",
+    "Now discard every censored observation, keeping the same goals. Retaining the limits settles two hundred and sixty-two additional decisions: one hundred and sixty-two passes and one hundred failures. Across seven thousand six hundred and eighteen valid molecule IDs, the compatible shortlist tightens from one thousand six hundred eighty-two to five thousand one hundred seventy, to one thousand eight hundred forty-four to five thousand seventy. These are evidence decisions under these illustrative goals, rather than predictions."
+  ],
+  [
+    163,
+    198,
+    "Order changes the accounting",
+    "This molecule fails both solubility and clearance. The first-failure table initially credits solubility. Move clearance earlier and its credit changes. The population attribution changes too, but the final shortlist stays fixed. A filtering waterfall tells an accounting story shaped by its order. It does not tell us which assay caused a molecule's liabilities."
+  ],
+  [
+    198,
+    220,
+    "Save the question and its evidence",
+    "For unresolved IDs, this table counts assays that are the only unresolved gate. Resolving one could settle that ID either way. These are opportunities for decisive evidence, rather than probabilities of success. The JSON preserves the goals, policy, per-ID decisions, ordering, and assay opportunities."
+  ],
+  [
+    220,
+    245,
+    "Provenance and limitations",
+    "We count published molecule IDs: one structure appears under two IDs, so they are not independent samples. Published structures and inequalities are retained. These goals cannot establish clinical safety. ChatGPT and Codex assisted with development and testing. My takeaway is simple: preserve the evidence before deciding what it rules in or out."
+  ]
+]

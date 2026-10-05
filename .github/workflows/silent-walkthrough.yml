@@ -1,0 +1,75 @@
+name: Silent notebook walkthrough
+on:
+  push:
+    branches: [video/silent-walkthrough]
+    paths:
+      - .github/workflows/silent-walkthrough.yml
+      - record_silent_walkthrough.cjs
+      - finalize_silent_video.py
+      - voiceover_segments.json
+permissions:
+  contents: read
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check recording script syntax
+        run: |
+          node --check record_silent_walkthrough.cjs
+          python -m py_compile finalize_silent_video.py
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install the declared notebook and recording dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg
+      - name: Start the real native Python notebook
+        run: |
+          mkdir -p video-output
+          python -m marimo run missing_molecules.py --headless --no-token --host 127.0.0.1 --port 2718 > video-output/native_server.log 2>&1 &
+          python - <<'PY'
+          import hashlib, time, urllib.request
+          from pathlib import Path
+          from rdkit import Chem
+          assert hashlib.sha256(Path("missing_molecules.py").read_bytes()).hexdigest() == "de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b"
+          assert Chem.MolFromSmiles("CCO") is not None
+          for _ in range(60):
+              try:
+                  urllib.request.urlopen("http://127.0.0.1:2718", timeout=2).close()
+                  break
+              except Exception:
+                  time.sleep(1)
+          else:
+              raise SystemExit("Native notebook did not start")
+          PY
+      - name: Record the real controls and validate the demonstrated results
+        env:
+          MARIMO_URL: http://127.0.0.1:2718
+          BROWSER_EVIDENCE_DIR: video-output/evidence
+          BROWSER_PHASE: silent_native_walkthrough
+        run: node record_silent_walkthrough.cjs
+      - name: Create the silent MP4 and timestamped voice-over pack
+        run: python finalize_silent_video.py
+      - name: Upload the video and voice-over guide
+        uses: actions/upload-artifact@v7
+        with:
+          name: Missing-Molecules-Silent-Video
+          path: video-output/delivery/
+          retention-days: 30
+      - name: Save recording diagnostics
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: silent-recording-evidence
+          path: |
+            video-output/capture.json
+            video-output/recording_failure.json
+            video-output/native_server.log
+            video-output/*.png
+            video-output/evidence/live_browser_report.json
+          retention-days: 7
