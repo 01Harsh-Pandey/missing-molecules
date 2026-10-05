@@ -46,7 +46,11 @@ async function visibleSummary() {
 async function downloadQuestion(name) {
   await stable();
   const pending = page.waitForEvent('download', { timeout: 30000 });
-  await page.getByText('Download this question and its results', { exact: true }).click();
+  const downloadControl=page.getByText('Download this question and its results', { exact: true });
+  // Verify genuine JSON downloads without taking the camera away from the narrated scene.
+  // The final on-screen export still uses the visible browser click.
+  if(name==='final_defaults') await downloadControl.click();
+  else await downloadControl.evaluate(el=>el.click());
   const download = await pending;
   assert.equal(download.suggestedFilename(), 'my_evidence_question.json');
   const file = path.join(destination, name + '.json');
@@ -288,6 +292,10 @@ async function run() {
     document.querySelector('#recording-chapter').textContent='01 · The question';
   });
   await camera(page.locator('.mm-hero'));
+  const beforeProbe=await page.locator('.mm-hero').boundingBox();
+  await downloadQuestion('offscreen_download_probe');
+  const afterProbe=await page.locator('.mm-hero').boundingBox();
+  assert(Math.abs(afterProbe.y-beforeProbe.y)<2,'Off-screen verification changed the camera');
   await page.evaluate(()=>{
     const marker=document.createElement('div');marker.id='recording-sync-marker';
     marker.style.cssText='position:fixed;inset:0;z-index:2147483647;background:rgb(255,0,255)';
