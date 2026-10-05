@@ -4,13 +4,14 @@ const { chromium }=require('playwright');
 const fs=require('node:fs');
 const path=require('node:path');
 const {spawnSync}=require('node:child_process');
+const crypto=require('node:crypto');
 const out=path.resolve('hosted-probe-output');fs.mkdirSync(out,{recursive:true});
 const url='https://sb-17962ab4c96906aa.sb.molab.run/';
 const safeURL=x=>{try{const u=new URL(x);return u.origin+u.pathname;}catch{return String(x).slice(0,100);}};
 async function inspect(page){
  return {title:await page.title(),url:safeURL(page.url()),
-  text:(await page.locator('body').innerText()).slice(0,8500),
-  controls:await page.locator('button,[role=button]').evaluateAll(nodes=>nodes.slice(0,60).map(el=>({
+  text:(await page.locator('body').innerText()).slice(0,1800),
+  controls:await page.locator('button,[role=button]').evaluateAll(nodes=>nodes.filter(el=>!['Copy code','Hide code'].includes(el.getAttribute('aria-label'))).slice(0,35).map(el=>({
     text:el.innerText.trim().slice(0,100),aria:el.getAttribute('aria-label'),testid:el.getAttribute('data-testid'),title:el.getAttribute('title'),disabled:!!el.disabled
   }))),
   cells:await page.locator('[data-cell-id]').count(),editors:await page.locator('.cm-editor').count(),
@@ -31,11 +32,39 @@ const ops={};
   const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});report.status=r?.status();
   await page.waitForTimeout(15000);
   report.steps.push({phase:'initial',...(await inspect(page))});
-  const run=page.getByRole('button',{name:/^Run all/i}).first();
+  const takeover=page.getByTestId('takeover-button');
+  if(await takeover.count()){
+    const response=page.waitForResponse(r=>r.url().includes('/kernel/takeover')&&r.request().method()==='POST',{timeout:30000});
+    await takeover.click();
+    report.takeover_status=(await response).status();
+    if(report.takeover_status!==200)throw Error('Writer control was not granted');
+    await takeover.waitFor({state:'detached',timeout:30000});
+    await page.reload({waitUntil:'domcontentloaded'});
+    await page.waitForTimeout(8000);
+  }
+  report.steps.push({phase:'writer',...(await inspect(page))});
+  const run=page.getByRole('button',{name:/^(?:Re-)?Run all(?: cells| stale cells)?$/i}).first();
   if(await run.count()&&await run.isVisible()){
-   await run.click();report.action='clicked Run all';
-   await page.locator('.board .card svg path').first().waitFor({state:'attached',timeout:120000}).catch(e=>report.wait_error=String(e.message).slice(0,250));
-  }else report.action='no visible Run all button';
+    await run.click();report.action='clicked Run all';
+  }else{
+    await page.getByTestId('command-palette-button').click();
+    await page.waitForTimeout(500);
+    const search=page.getByRole('combobox').last();
+    if(await search.count())await search.fill('Re-run all cells');
+    await page.waitForTimeout(500);
+    const command=page.getByRole('option',{name:/Re.run all cells/i}).first();
+    if(await command.count()&&await command.isVisible()){
+      await command.click();report.action='command palette: Re-run all cells';
+    }else{
+      report.steps.push({phase:'palette',...(await inspect(page))});
+      await page.keyboard.press('Escape');
+      await page.keyboard.press('Control+Shift+r');
+      report.action='documented Run all stale cells shortcut';
+    }
+  }
+  await page.locator('.board .card svg path').first().waitFor({state:'attached',timeout:120000}).catch(e=>report.wait_error=String(e.message).slice(0,250));
+  if(await page.locator('.cm-editor').count())await page.keyboard.press('Control+.');
+  await page.waitForTimeout(1000);
   report.steps.push({phase:'final',...(await inspect(page))});
   report.live_board_accessible=await page.locator('.board .card svg path').count()>0;
   await page.screenshot({path:path.join(out,'editor-final.png'),fullPage:false});
@@ -46,7 +75,7 @@ const ops={};
   await browser.close();
  }
  if(report.live_board_accessible){
-  const result=spawnSync(process.execPath,['test_live_browser.cjs','--app-view'],{stdio:'inherit',env:{...process.env,
+  const result=spawnSync(process.execPath,['test_live_browser.cjs','--app-view','--takeover'],{stdio:'inherit',env:{...process.env,
    MARIMO_URL:url,BROWSER_EVIDENCE_DIR:'hosted-probe-output/browser',BROWSER_PHASE:'fresh_molab_runtime',TEST_SCOPE:'final_notebook'},timeout:360000});
   process.exitCode=result.status===0?0:1;
  }
