@@ -1,0 +1,46 @@
+name: Publish verified narrated video
+on:
+  push:
+    branches: [video/narrated-submission]
+    paths: [publish_video_config.json, .github/workflows/publish-narrated-video.yml, publish_verified_video.py]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install verification tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Download the reviewed final MP4
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          cfg=json.load(open("publish_video_config.json"))
+          with open("final-reviewed.zip","wb") as f:
+              subprocess.run(["gh","api",f"repos/01Harsh-Pandey/missing-molecules/actions/artifacts/{cfg['artifact_id']}/zip"],stdout=f,check=True)
+          PY
+      - name: Verify the exact reviewed bytes before publication
+        run: python publish_verified_video.py
+      - name: Publish a direct MP4 download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create missing-molecules-final-video-2026-10-05 "publish-video/Missing_Molecules_Final_Indian_English.mp4" "publish-video/FINAL_VIDEO_VERIFICATION.json" --target "$GITHUB_SHA" --title "The Missing Molecules — narrated submission video" --notes-file publish-video/RELEASE_NOTES.md
+      - name: Verify the public MP4 download end to end
+        run: python publish_verified_video.py --verify-public
+      - name: Save public link verification
+        uses: actions/upload-artifact@v7
+        with:
+          name: verified-final-mp4-public-link
+          path: publish-video/PUBLIC_DOWNLOAD_VERIFICATION.json
+          retention-days: 30
