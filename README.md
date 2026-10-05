@@ -44,12 +44,12 @@ A refreshed hosted molab session passed 20 functional browser checks, including 
 
 Validated notebook SHA-256: `de5d29f56c04b0bd87238a8a9774ade19a8fcefad0ec353b531bd95543e3325b`.
 
-The optional [voice-over guide](VIDEO_SCRIPT.md) links a **4:05 silent walkthrough** and provides nine narration cues. The footage uses the published notebook in native Python; the pack includes the MP4, timing sheet, chapter subtitles, and recording evidence.
+[Download the final narrated MP4](https://github.com/01Harsh-Pandey/missing-molecules/releases/download/missing-molecules-final-video-2026-10-05/Missing_Molecules_Final_Indian_English.mp4): **4:05, 1080p**, with a standard synthetic Indian English voice. The footage demonstrates the published notebook in native Python. The [narration and scientific anchors](VIDEO_SCRIPT.md) document all fourteen speech cues; the [release](https://github.com/01Harsh-Pandey/missing-molecules/releases/tag/missing-molecules-final-video-2026-10-05) includes the media verification report. The encoded audio was independently transcribed, chapter frames were reviewed, and full decoding, audio, timing, and public-download checks passed.
 
 ## Attribution and AI use
 
 Notebook by Harsh Pandey. Data: Expansion Therapeutics and the OpenADMET Consortium, [ExpansionRx full release](https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-data), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source measurements and structures are unchanged; decision annotations and the custom EvidenceBoard are additions. Provenance is preserved in the notebook and `data/`.
 
-OpenAI ChatGPT and Codex assisted with concept development, coding, validation, and editing. The notebook includes the disclosure and limitations.
+OpenAI ChatGPT and Codex assisted with concept development, coding, validation, editing, and video production. The video uses synthetic narration and discloses this in its closing. The notebook includes the disclosure and limitations.
 
 No competition entry has been submitted.
