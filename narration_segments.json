@@ -75,7 +75,7 @@
     198,
     220,
     "Save the question and its evidence",
-    "For unresolved IDs, this table counts assays that are the only unresolved gate. Resolving one could settle that ID either way. These are opportunities for decisive evidence, rather than probabilities of success. The JSON preserves the goals, policy, per-ID decisions, ordering, and assay opportunities."
+    "For unresolved IDs, this table counts assays that are the only unresolved gate. Resolving one could settle that ID either way. These are opportunities for decisive evidence, rather than probabilities of success. The downloadable record preserves the goals, policy, decisions for each molecule, ordering, and assay opportunities."
   ],
   [
     220,
